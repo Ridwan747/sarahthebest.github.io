@@ -67,14 +67,11 @@
 }
 .grid-container {
   z-index: 1;
-  min-height: 100%; 
-    flex: 1;
+  width: 100%;
+  flex: 1;
   display: grid;
   grid-template-rows: 400px repeat(auto);
   align-items: start;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -9%);
 }
 .customBorder{
   border: #17171753 1px solid;
@@ -82,12 +79,7 @@
 }
 .grid-item1 {
   grid-area: header;
-  grid-column-start: 1;
-  grid-column-end: 3;
   height: 400px;
-  background-image: url(Bilder/Velocity.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
   border-top: 0 !important;
   border-left: 0 !important;
   border-right: 0 !important;
