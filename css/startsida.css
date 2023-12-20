@@ -6,7 +6,7 @@
     z-index: 2;
   }
   .header {
-    height: 100vh;
+    height: 100svh;
   }
   .about-me {
     height: 300px;
@@ -30,8 +30,6 @@
   }
   .container-lg {
     position: relative;
-  }
-  .list {
   }
   #bootstrap-overrides h4 {
     margin-top: 0;
