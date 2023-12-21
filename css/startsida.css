@@ -159,10 +159,8 @@
 .selfie {
   width: 90%;
   height: 90%;
-  box-shadow: 10px 10px 0px rgb(207, 118, 255);
 }
 .selfie:hover {
-  box-shadow: 10px 10px 10px rgb(233, 192, 255);
 }
 .about-me {
   display: grid;

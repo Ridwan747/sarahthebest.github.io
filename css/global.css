@@ -88,7 +88,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.4s linear;
 }
 .checkbox-label .ball {
   background-color: #fff;
@@ -98,7 +97,6 @@
   left: 2px;
   top: 2px;
   border-radius: 50%;
-  transition: all 0.4s linear;
 }
 .checkbox {
   opacity: 0;
@@ -114,7 +112,6 @@
 }
 body {
   background-color: rgb(214, 214, 214);
-  transition: background 0.4s linear;
   margin: 0;
   overflow-y: scroll;
 }
@@ -124,12 +121,10 @@ body {
 .customBG {
   background-color: rgba(245, 245, 245, 0.389);
   backdrop-filter: blur(5px);
-  transition: background 0.4s linear;
 }
 p {
   font-family: "Archivo", sans-serif;
   color: #171717;
-  transition:color 0.4s linear;
 }
 .headline{
   font-family: "Archivo Black", sans-serif;
@@ -146,30 +141,31 @@ nav {
   border-bottom: 1px solid #43434353;
 }
 
-#bootstrap-overrides.nav-link nav a{
+.link{
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
   font-size: 1.2rem;
-  color: rgb(136, 0, 255);
+  color: rgb(153, 0, 255);
   display: block;
+  padding: 10px;
 }
 .logo {
   font-size: 1.5rem;
   width: 50px;
-  /* color: #171717;
-  line-height: 80%; */
-  transition-duration: 0.4s;
+}
+.link:hover{
+  color: rgb(153, 0, 255);
+  filter: brightness(150px);
+  background-color:#dee2e600;
 }
 
-#bootstrap-overrides nav a:hover {
+#bootstrap-overrides .link:hover {
   filter: brightness(120%);
   text-decoration: underline 1px rgb(136, 0, 255);
-  transition-property: all;
-  transition-duration: 0.4s;
+  background-color: #dee2e667;
 }
 .navbar-toggler-icon {
   filter: invert(0);
-  transition: all 0.4s linear;
 }
 
 /* footer */
@@ -184,19 +180,13 @@ h8 {
 .contact{
   width: fit-content;
 }
-.cr{
-  
-}
 /* darkmode */
 body.lightToDark {
   background-color: #1e1222;
 }
-body.lightToDark #bootstrap-overrides nav a{
+/* body.lightToDark .link{
   color: #dee2e6;
-}
-body.lightToDark nav.logo{
-  color: #dee2e6;
-}
+} */
 body.lightToDark #bootstrap-overrides.navbar-toggler-icon{
 filter: invert(1);}
 
