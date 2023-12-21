@@ -146,7 +146,7 @@ nav {
   border-bottom: 1px solid #43434353;
 }
 
-#bootstrap-overrides nav a{
+#bootstrap-overrides.nav-link nav a{
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
   font-size: 1.2rem;
@@ -172,12 +172,20 @@ nav {
   transition: all 0.4s linear;
 }
 
+/* footer */
+
 footer{
   height: 300px;
   margin-top: auto; 
 }
+h8 {
+  font-size: 2.5rem;
+}
 .contact{
   width: fit-content;
+}
+.cr{
+  
 }
 /* darkmode */
 body.lightToDark {

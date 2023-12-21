@@ -71,7 +71,6 @@
 
 .customBorder{
   border: #17171753 1px solid;
-  transition: all 0.4s linear;
 }
 .grid-item1 {
   grid-area: header;
@@ -100,7 +99,6 @@
   width: fit-content;
   font-size: 1.25rem;
   display: inline-block;
-  transition: 0.2s linear;
 }
 .tag:hover {
   color: rgb(136, 0, 255);
