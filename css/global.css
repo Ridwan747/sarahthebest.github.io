@@ -181,7 +181,12 @@ h8 {
 .footerArrow {
   filter: invert(0);
 }
+.chat{
+  color: #171717;
+  text-decoration: none;
+}
 .chat:hover{
+  color: #171717;
   text-decoration: underline 2px #171717;
   margin-top: 5px;
 }
@@ -198,6 +203,14 @@ body.lightToDark .footerArrow {
 body.lightToDark .customBG {
   background-color: #43434353;
 }
+body.lightToDark .chat{
+  color: #dee2e6;
+}
+body.lightToDark .chat:hover{
+  color: #dee2e6;
+  text-decoration: underline 2px #dee2e6;
+}
+
 /* animations */
 
 /* Skew */
