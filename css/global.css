@@ -140,7 +140,6 @@ nav {
   backdrop-filter: blur(30px);
   border-bottom: 1px solid #43434353;
 }
-
 .link{
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
@@ -167,7 +166,6 @@ nav {
 .navbar-toggler-icon {
   filter: invert(0);
 }
-
 /* footer */
 
 footer{
@@ -180,16 +178,23 @@ h8 {
 .contact{
   width: fit-content;
 }
+.footerArrow {
+  filter: invert(0);
+}
+.chat:hover{
+  text-decoration: underline 2px #171717;
+  margin-top: 5px;
+}
 /* darkmode */
 body.lightToDark {
   background-color: #1e1222;
 }
-/* body.lightToDark .link{
-  color: #dee2e6;
-} */
 body.lightToDark #bootstrap-overrides.navbar-toggler-icon{
 filter: invert(1);}
 
+body.lightToDark .footerArrow {
+  filter: invert(1);
+}
 body.lightToDark .customBG {
   background-color: #43434353;
 }
