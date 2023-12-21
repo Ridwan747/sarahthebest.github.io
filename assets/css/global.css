@@ -108,15 +108,12 @@
 }
 /* sets transition for all  */
 *{
-  transition: all 0.3s linear !important;
+  transition: all 0.4s linear !important;
 }
 body {
   background-color: rgb(214, 214, 214);
   margin: 0;
   overflow-y: scroll;
-}
-.transition{
-  transition: all 0.4s linear !important;
 }
 .customBG {
   background-color: rgba(245, 245, 245, 0.389);
