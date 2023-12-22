@@ -147,7 +147,8 @@ nav {
 }
 .logo {
   font-size: 1.5rem;
-  width: 50px;
+  width: 80px;
+  filter: invert(0);
 }
 .link:hover{
   color: rgb(153, 0, 255);
@@ -187,13 +188,18 @@ h8 {
   text-decoration: underline 2px #171717;
   margin-top: 5px;
 }
+.shadow{
+  box-shadow: 1px 10px 10px rgba(160, 160, 160, 0.26);
+}
 /* darkmode */
 body.lightToDark {
   background-color: #1e1222;
 }
 body.lightToDark #bootstrap-overrides.navbar-toggler-icon{
 filter: invert(1);}
-
+body.lightToDark .logo {
+filter: invert(1);
+}
 body.lightToDark .footerArrow {
   filter: invert(1);
 }

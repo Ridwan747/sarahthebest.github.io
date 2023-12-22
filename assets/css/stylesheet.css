@@ -194,7 +194,6 @@
   border-radius: 10px;
   margin-right: 2px;
   width: 27vw;
-  box-shadow: 1px 10px 10px rgba(160, 160, 160, 0.26);
 }
 .col {
   display: flex;
@@ -212,7 +211,6 @@
   margin-right: 20px;
   border-radius: 20px;
   margin-top: 10px;
-  box-shadow: 1px 10px 10px rgba(160, 160, 160, 0.26);
 }
 #grid-item6 {
   grid-area: phase4;
@@ -301,7 +299,7 @@ blockquote {
   padding-left: 10px;
   line-height: 40px;
   margin-top: 10%;
-  border: 4px solid rgb(201, 201, 201);
+  border: 4px solid #171717;
   border-top: 0;
   border-bottom: 0;
   border-right: 0;
@@ -319,7 +317,13 @@ body.lightToDark h8,
 body.lightToDark p,
 body.lightToDark blockquote
 {
-  color: whitesmoke;
+  color: #dee2e6;
+}
+body.lightToDark blockquote {
+  border: 4px solid #dee2e6;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
 }
 body.lightToDark .customBorder{
   border: #dee2e6 1px solid;

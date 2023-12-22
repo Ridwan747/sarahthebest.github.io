@@ -253,6 +253,12 @@ section {
   height: fit-content;
   margin-bottom: 60px;
 }
+.stars{
+  margin-right: 300px;
+}
+.starsRight{
+  margin-left: 300px;
+}
 
 /* TEXT STYLES */
 h2,
