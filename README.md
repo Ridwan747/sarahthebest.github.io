@@ -1,3 +1,3 @@
 ** Welcome to my portfolio ** 
 
-**Still in developement**
+**Still in development**
