@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio redesign</title>
-  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-  <link rel="stylesheet" href="../assets/css/stylesheet.css" />
-  <link rel="stylesheet" href="../assets/css/global.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/stylesheet.css" />
+  <link rel="stylesheet" href="assets/css/global.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,300;0,400;1,400&family=Libre+Baskerville:ital@1&family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -16,10 +16,10 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
   <script src="https://kit.fontawesome.com/f471be9456.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="bootstrap-overrides">
   <nav class="navbar customBorder border-top-0 border-start-0 border-end-0 navbar-expand-lg sticky-top">
     <div class="container-lg text-center">
-      <a class="navbar-brand col-2 ms-0 ps-0" href="index.html"><img class="logo" src="../assets/img/logo.png"></a>
+      <a class="navbar-brand col-2 ms-0 ps-0" href="index.html"><img class="logo" src="assets/img/logo.png"></a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="">  </span>
       </button>
@@ -47,13 +47,13 @@
     </div>
   </nav>
   <div class="m-0 p-0 col w-100 h-100" id="headerBG">
-    <img src="../assets/img/headerBG.png" class="position-fixed img-fluid w-100" id="bg"
+    <img src="assets/img/headerBG.png" class="position-fixed img-fluid w-100" id="bg"
       alt="ai generated background image.">
   </div>
 
   <main>
     <div class="grid-container container-lg mx-auto border-top-0 rounded-bottom customBG customBorder">
-      <div class="grid-item1 col-12 customBorder p-0 m-0">
+      <div class="grid-item1 customBorder col-12 p-0 m-0">
         <div class="projectTitle align-items-center col-8">
           <h1 class="my-3 cursive">Portfolio Redesign 2024</h1>
           <ol class="projectTags">
@@ -63,8 +63,22 @@
           </ol>
         </div>
       </div>
-      <div class="grid-item2 customBorder p-0 m-0">
-
+      <div id="grid-item3" class="col-11 mx-auto">
+        <h2>Background</h2>
+        <p>
+          My previous portfolio had not been updated for over a year and in preperation for my
+          internship period I wanted to give it a big update to reflect my own personal style developement.
+            
+          </div>
+          
+        </p>
+        <h2>Mission</h2>
+        <p>
+          The main scope was to develop a mobile trading app for the Thai
+          market. Through Velocity users can earn capital and trade stocks in a
+          safe enviroment. Velocity makes it possible to trade, sell and buy
+          stocks at any time for anyone.
+        </p>
       </div>
   
     </div>
@@ -77,7 +91,7 @@
         <p style="font-size: 2.5rem;" class="headline">Got questions?</p>
         <h8 class="cursive chat">
           Let's chat!
-          <img style="width: 20px;" class="footerArrow" src="../assets/img/arrowRight.png">
+          <img style="width: 20px;" class="footerArrow" src="assets/img/arrowRight.png">
         </h8>
       </div>
       <div class="w-100 cr">
