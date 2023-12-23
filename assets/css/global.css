@@ -170,9 +170,6 @@ footer{
   height: 300px;
   margin-top: auto; 
 }
-h8 {
-  font-size: 2.5rem;
-}
 .contact{
   width: fit-content;
 }
@@ -297,7 +294,6 @@ a {
 
 #bootstrap-overrides h2 {
   font-size: 2rem;
-  top: 0;
 }
 #bootstrap-overrides h3,
 #bootstrap-overrides h4{

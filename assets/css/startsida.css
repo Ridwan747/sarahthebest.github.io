@@ -60,7 +60,7 @@
     height: 100%;
     width: 100%;
   }
-  #bootstrap-overrides h4 {
+  #bootstrap-overrides h2 {
     margin-top: none;
   }
   .textDeco,
@@ -130,7 +130,7 @@
   #velocity {
     padding: 0;
   }
-  #bootstrap-overrides h4 {
+  #bootstrap-overrides h2 {
     margin-top: 50px;
   }
   .textDeco,
@@ -259,6 +259,7 @@ section {
 .starsRight{
   margin-left: 300px;
 }
+
 
 /* header wave animation */
 
