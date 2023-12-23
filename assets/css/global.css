@@ -273,10 +273,6 @@ body.lightToDark .chat:hover{
 h2,
 h3,
 h4,
-h5,
-h6,
-h7,
-h8,
 blockquote,
 li,
 p,
@@ -304,15 +300,6 @@ a {
   top: 0;
 }
 #bootstrap-overrides h3,
-#bootstrap-overrides h4,
-#bootstrap-overrides h5 {
+#bootstrap-overrides h4{
   font-size: 2rem;
-}
-
-#bootstrap-overrides h6 {
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-h7 {
-  font-size: 2.5rem;
 }
