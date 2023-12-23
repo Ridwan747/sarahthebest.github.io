@@ -268,3 +268,51 @@ body.lightToDark .chat:hover{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+/* TEXT STYLES */
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8,
+blockquote,
+li,
+p,
+a {
+  color: #171717;
+  font-family: "Archivo";
+}
+
+#bootstrap-overrides h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.wrappertitle {
+  max-width: fit-content !important;
+  color: #171717;
+  display: block;
+  height: fit-content;
+  top: 20vh;
+  z-index: 2;
+}
+
+#bootstrap-overrides h2 {
+  font-size: 2rem;
+  top: 0;
+}
+#bootstrap-overrides h3,
+#bootstrap-overrides h4,
+#bootstrap-overrides h5 {
+  font-size: 2rem;
+}
+
+#bootstrap-overrides h6 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+h7 {
+  font-size: 2.5rem;
+}
