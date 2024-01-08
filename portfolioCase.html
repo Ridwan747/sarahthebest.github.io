@@ -20,6 +20,11 @@
 </head>
 
 <body id="bootstrap-overrides">
+
+  <button id="topBtn" class="position-fixed end-0 bottom-0" onclick="goToTop()">
+    <img class="w-50 ms-3 upArrow" src="assets/img/upArrow.png" alt="">
+</button>
+
   <nav class="navbar customBorder border-top-0 border-start-0 border-end-0 navbar-expand-lg sticky-top">
     <div class="container-lg text-center">
       <a class="navbar-brand col-2 ms-0 ps-0" href="index.html"><img class="logo" src="assets/img/logo.png"></a>
@@ -112,7 +117,7 @@
       </div>
 
       <div id="grid-item5" class="col-11 mx-auto">
-        <div class="phase2 customBorder">
+        <div class="phase3 customBorder">
           <div class="title">
             <h2><span style="font-weight: 800">Phase 2</span> - Taking action!</h2>
             <p class="mb-5">
@@ -124,10 +129,10 @@
         </div>
       </div>
       <div id="grid-item6" class="col-11 mx-auto">
-        <div class="phase2 customBorder">
+        <div class="phase2 customBorder" style="padding-bottom: 0;">
           <div class="title">
             <h2><span style="font-weight: 800">Phase 3</span> - Facing the behemoth...</h2>
-            <p class="mb-5">
+            <p class="mb-4">
               After formulating a layout and a idea of what i want to achieve it was not time to begin building my
               portfolio...
             </p>
@@ -168,7 +173,7 @@
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                   data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <p> I made the excecutive decision to use Bootstrap 5 for this project. It made the issue of
+                    I made the excecutive decision to use Bootstrap 5 for this project. It made the issue of
                       responsiveness much easier to solve
                       and made my CSS file a lot prettier. <br>
                       Bootstrap came with its own issues though that i wasn't entirely equipped to solve on my own which
@@ -176,7 +181,6 @@
                       One issue was the Bootstrap default styles. Eg. wanting to override a bs default background was a
                       bit tricky for me
                       but i solved it by adding a id tag to body so it made my selectors more specific.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -196,6 +200,11 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="row align-items-center mt-4">
+            <h3>ChatGPT - My...saviour?</h3>
+            <p>Throgh this journey i often sought the guidance of chatGPT to help me thorugh the various obstacles and hurdles i faced in my path.</p>
+            <img src="assets/img/gpt.png" style="max-width: 550px;min-width: 370px;" alt="">
           </div>
         </div>
       </div>
@@ -251,10 +260,14 @@
     </footer>
   </section>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-  <script defer src="../scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>

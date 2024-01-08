@@ -155,16 +155,6 @@
     border-radius: 0%;
   }
 }
-/* General STYLE! */
-/* :root{
-  --dark: #171717;
-  --light: #dee2e6;
-  --purple: #660fea;
-  --bg: #1e1222;
-} */
-.customBorder {
-  border: rgba(23, 23, 23, 0.3254901961) 1px solid;
-}
 
 .container-lg {
   flex-wrap: wrap;
@@ -210,9 +200,10 @@
 .circle {
   width: 300px;
   height: 300px;
-  background: rgba(103, 15, 234, 0.4078431373);
-  filter: blur(20px);
+  background: rgb(255,244,244);
+  background: radial-gradient(circle, rgba(255,244,244,0.5382353625043768) 18%, rgba(179,255,140,0.6362745781906513) 53%, rgba(58,0,108,0.6474790599833684) 61%); 
   z-index: 1;
+  filter: blur(20px);
 }
 
 .Infobox {
@@ -264,7 +255,7 @@ li {
 }
 
 .tag:hover {
-  color: #660fea;
+  color: var(--purple);
   box-shadow: rgba(0, 0, 0, 0.391) 0px 4px 12px;
 }
 
@@ -392,10 +383,6 @@ body.lightToDark .case {
   border-bottom: 1px solid var(--light);
 }
 
-body.lightToDark .customBorder {
-  border: var(--light) 1px solid;
-}
-
 body.lightToDark .tag {
   color: var(--light);
 }
@@ -437,8 +424,8 @@ body.lightToDark .scroller {
   position: relative;
   overflow: hidden;
   width: 350px;
-  border-left: 0;
-  border-right: 0;
+  border-left: 0 !important;
+  border-right: 0 !important;
 }
 
 .scroller > span {

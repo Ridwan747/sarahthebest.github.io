@@ -1,302 +1,327 @@
 /*  beeg screen */
 
 @media screen and (max-width: 2000px) {
-    #upBtn {
-      opacity: 100%;
-    }
-    *:hover {
-      pointer-events: all;
-    }
-    p {
-      font-size: 1.15rem;
-      line-height: 32px;
-    }
-    #bg {
-      height: 100%;
-      width: 100%;
-      z-index: 0;
-    }
-    h7 {
-      margin-bottom: 10px;
-    }
-  }
-  /* medium */
-  @media screen and (max-width: 1000px) {
-    .content-to-hide {
-      display: none;
-    }
-    #bg {
-      height: 100%;
-      width: max-content;
-    }
-  }
-  
-  /*  small screen */
-  
-  @media screen and (max-width: 900px) {
-    #bootstrap-overrides .container-lg {
-      width: 100%;
-    }
-    #bootstrap-overrides .container {
-      width: 100%;
-    }
-    .card {
-      width: fit-content;
-    }
-    .container-lg * :hover {
-      pointer-events: none !important;
-    }
-    #upBtn {
-      opacity: 0%;
-    }
-  }
-  
-  /* removes hover effects */
-  .noHover {
-    pointer-events: none;
-  }
-  /* class to align items center */
-  .align-items-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /*Aligns vertically center */
-    justify-content: center; /*Aligns horizontally center */
-  }
-:root{
-    --dark: #171717;
-    --light: #e5e5e5;
-    --purple: #660fea;
-    --bg: #1e1222;
-  }
-  .checkbox-label {
-    background-color: var(--dark);
-    outline: var(--dark) solid 2px;
-    width: 25px;
-    height: 25px;
-    align-items: center;
-    transition:0s !important;
-  }
-  .checkbox-label:hover {
-  box-shadow: rgba(255, 255, 255, 0.469) 1px 1px 20px;
-  }
-  .checkbox {
-    opacity: 0;
-    position: absolute;
-  }
-  #half-circle {
-    width: 12.5px;height: 25px;
-    border-radius: 150px  0 0 150px; 
-  background-color: white;  
-  left: 0;
-    transition:0s !important;
-  }
-  .checkbox:checked + .checkbox-label #half-circle {
-    transform: translateX(12.5px) rotateY(180deg);
-  }
-  /* sets transition for all  */
-  * {
-    transition: all 0.4s linear !important;
-    cursor: default;
-  }
-  
-  body {
-    margin: 0;
-    overflow-y: scroll;
-  }
-  .customBG {
-    background-color: rgba(245, 245, 245, 0.389);
-    backdrop-filter: blur(5px);
-  }
-  /* navbar */
-  nav {
-    z-index: 5;
-    backdrop-filter: blur(30px);
-    border-bottom: 1px solid #43434353;
-  }
-  .link {
-    text-decoration: none;
-    font-family: "Archivo", sans-serif;
-    font-size: 1.2rem;
-    color: var(--dark);
-    display: block;
-    padding: 10px;
-    width: fit-content;
-  }
-  .logo {
-    font-size: 1.5rem;
-    width: 80px;
-    filter: invert(0);
-  }
-  
-  #bootstrap-overrides .link:hover {
-    filter: brightness(120%);
-    color: var(--purple);
-    text-decoration: underline 1px var(--purple);
-  }
-  
-  /* footer */
-  
-  footer {
-    height: 300px;
-    margin-top: auto;
-  }
-  .contact {
-    width: fit-content;
-  }
-  .footerArrow {
-    filter: invert(0);
-  }
-  .chat {
-    color: var(--dark);
-    text-decoration: none;
-  }
-  .chat:hover {
-    color: var(--dark);
-    text-decoration: underline 1px var(--dark);
-  }
-  .shadow {
-    box-shadow: 1px 10px 10px rgba(160, 160, 160, 0.26);
-  }
-  /* darkmode */
-  body.lightToDark {
-    background-color: var(--bg);
-  }
-  body.lightToDark .link {
-    color: #dee2e6;
-  }
-  body.lightToDark #bootstrap-overrides.navbar-toggler-icon {
-    filter: invert(1);
-  }
-  body.lightToDark .logo {
-    filter: invert(1);
-  }
-  body.lightToDark .footerArrow {
-    filter: invert(1);
-  }
-  body.lightToDark .customBG {
-    background-color: #43434353;
-  }
-  body.lightToDark .chat {
-    color: var(--light);
-  }
-  body.lightToDark .chat:hover {
-    color: var(--light);
-    text-decoration: underline 2px var(--light);
-  }
-  body.lightToDark .checkbox-label {
-    outline: #ffffff 2px solid;
-    transition:0s !important;
-    background-color: #ffffff;
-  }
-  
-  body.lightToDark #half-circle{
-  background-color: var(--dark);
-  transition:0s !important;
-  } 
-  /* animations */
-  
-  /* Skew */
-  .hvr-skew {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  .hvr-skew:hover,
-  .hvr-skew:focus,
-  .hvr-skew:active {
-    -webkit-transform: skew(-10deg);
-    transform: skew(-10deg);
-  }
-  /* float */
-  .hvr-float {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .hvr-float:hover,
-  .hvr-float:focus,
-  .hvr-float:active {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-  
-  /* Grow Shadow */
-  .hvr-grow-shadow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-  }
-  .hvr-grow-shadow:hover,
-  .hvr-grow-shadow:focus,
-  .hvr-grow-shadow:active {
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  
-  /* TEXT STYLES */
-  h2,
-  h3,
-  h4,
-  blockquote,
-  li,
-  p,
-  a {
-    color: var(--dark);
-    font-family: "Archivo";
-  }
-  .marker {
-    background-color: #660fea;
-    color: #f1f4f7;
-    border-radius: 50rem;
-    padding: 4px;
+    #topBtn {
+        display: block;
+      }
+  *:hover {
+    pointer-events: all;
   }
   p {
-    font-family: "Archivo", sans-serif;
-    color: var(--dark);
+    font-size: 1.15rem;
+    line-height: 32px;
   }
-  .headline {
-    font-family: "Archivo Black", sans-serif;
+  #bg {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
   }
-  .cursive {
-    font-family: "Libre Baskerville", serif;
+  h7 {
+    margin-bottom: 10px;
   }
-  .mono {
-    font-family: "Roboto Mono", monospace;
+}
+/* medium */
+@media screen and (max-width: 1000px) {
+  .content-to-hide {
+    display: none;
   }
-  
-  #bootstrap-overrides h1 {
-    font-size: 3rem;
-    font-weight: bolder;
-    margin-bottom: 20px;
+  #topBtn {
+    display: block;
   }
-  
-  #bootstrap-overrides h2 {
-    font-size: 2rem;
+  #bg {
+    height: 100%;
+    width: max-content;
   }
-  #bootstrap-overrides h3,
-  #bootstrap-overrides h4 {
-    font-size: 2rem;
+}
+
+/*  small screen */
+
+@media screen and (max-width: 700px) {
+  #bootstrap-overrides .container-lg {
+    width: 100%;
+  }
+  #bootstrap-overrides .container {
+    width: 100%;
+  }
+  .card {
+    width: fit-content;
+  }
+  .container-lg * :hover {
+    pointer-events: none !important;
+  }
+}
+
+/* my colors */
+:root {
+  --dark: #171717;
+  --light: #EFEFEF;
+  --purple: #c940ff;
+  --bg: #1e1222;
+}
+
+/* removes hover effects */
+.noHover {
+  pointer-events: none;
+}
+
+/* class to align items center */
+.align-items-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*Aligns vertically center */
+  justify-content: center; /*Aligns horizontally center */
+}
+
+/* darkmode button */
+.checkbox-label {
+  background-color: var(--dark);
+  outline: var(--dark) solid 2px;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  transition: 0s !important;
+}
+.checkbox-label:hover {
+  box-shadow: rgba(255, 255, 255, 0.469) 1px 1px 20px;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+#half-circle {
+  width: 12.5px;
+  height: 25px;
+  border-radius: 150px 0 0 150px;
+  background-color: white;
+  left: 0;
+  transition: 0s !important;
+}
+.checkbox:checked + .checkbox-label #half-circle {
+  transform: translateX(12.5px) rotateY(180deg);
+}
+/* sets transition for all  */
+* {
+  transition: all 0.3s linear !important;
+  cursor: default;
+}
+/* top button */
+#topBtn {
+  width: 60px;
+  display: none;
+  background-color: var(--light);
+  border: 0px;
+  z-index: 2;
+  height: 50px;
+  border-radius: 50px 0px 0px 0px;
+}
+body {
+  margin: 0;
+  overflow-y: scroll;
+}
+.customBG {
+  background-color: rgba(245, 245, 245, 0.389);
+  backdrop-filter: blur(5px);
+}
+.customBorder {
+    border: rgba(23, 23, 23, 0.3254901961) 1px solid;
+  }
+/* navbar */
+nav {
+  z-index: 5;
+  backdrop-filter: blur(30px);
+  border-bottom: 1px solid #43434353;
+}
+.link {
+  text-decoration: none;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.2rem;
+  color: var(--dark);
+  display: block;
+  padding: 10px;
+  width: fit-content;
+}
+.logo {
+  font-size: 1.5rem;
+  width: 80px;
+  filter: invert(0);
+}
+
+#bootstrap-overrides .link:hover {
+  filter: brightness(120%);
+  color: var(--purple);
+  text-decoration: underline 1px var(--purple);
+}
+
+/* footer */
+
+footer {
+  height: 300px;
+  margin-top: auto;
+}
+.contact {
+  width: fit-content;
+}
+.footerArrow {
+  filter: invert(0);
+}
+.chat {
+  color: var(--dark);
+  text-decoration: none;
+}
+.chat:hover {
+  color: var(--dark);
+  text-decoration: underline 1px var(--dark);
+}
+.shadow {
+  box-shadow: 1px 10px 10px rgba(160, 160, 160, 0.26);
+}
+/* darkmode */
+body.lightToDark {
+  background-color: var(--bg);
+}
+body.lightToDark .link {
+  color: #dee2e6;
+}
+body.lightToDark #bootstrap-overrides.navbar-toggler-icon {
+  filter: invert(1);
+}
+body.lightToDark .logo {
+  filter: invert(1);
+}
+body.lightToDark .footerArrow {
+  filter: invert(1);
+}
+body.lightToDark .customBG {
+  background-color: #43434353;
+}
+body.lightToDark .chat {
+  color: var(--light);
+}
+body.lightToDark .chat:hover {
+  color: var(--light);
+  text-decoration: underline 2px var(--light);
+}
+body.lightToDark .checkbox-label {
+  outline: #ffffff 2px solid;
+  transition: 0s !important;
+  background-color: #ffffff;
+}
+
+body.lightToDark .customBorder {
+    border: var(--light) 1px solid;
   }
   
 
+body.lightToDark #half-circle {
+  background-color: var(--dark);
+  transition: 0s !important;
+}
+/* animations */
+
+.upArrow:hover{ 
+transform: rotate(-20deg);
+}
+
+/* Skew */
+.hvr-skew {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-skew:hover,
+.hvr-skew:focus,
+.hvr-skew:active {
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+/* float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* TEXT STYLES */
+h2,
+h3,
+h4,
+blockquote,
+li,
+p,
+a {
+  color: var(--dark);
+  font-family: "Archivo";
+}
+.marker {
+  background-color: var(--purple);
+  color: #f1f4f7;
+  border-radius: 50rem;
+  padding: 4px;
+}
+p {
+  font-family: "Archivo", sans-serif;
+  color: var(--dark);
+}
+.headline {
+  font-family: "Archivo Black", sans-serif;
+}
+.cursive {
+  font-family: "Libre Baskerville", serif;
+}
+.mono {
+  font-family: "Roboto Mono", monospace;
+}
+
+#bootstrap-overrides h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+#bootstrap-overrides h2 {
+  font-size: 2rem;
+}
+#bootstrap-overrides h3,
+#bootstrap-overrides h4 {
+  font-size: 2rem;
+}

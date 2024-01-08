@@ -16,6 +16,31 @@ function updateDateTime() {
   document.getElementById("dateTime").innerHTML = dateTimeString;
 }
 
+var mybutton = document.getElementById("topBtn");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function goToTop() {
+  if (document.documentElement.scrollTo) {
+    document.documentElement.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  } else {
+    document.body.scrollTop = 0;
+  }
+}
+
 // Initial call to display date and time
 updateDateTime();
 
