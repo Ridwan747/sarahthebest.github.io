@@ -3,10 +3,10 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="startsida"
   integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="assets/css/startsida.css" />
   <link rel="stylesheet" href="assets/css/global.css" />
@@ -29,7 +29,7 @@
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
-        <span class=""> </span>
+        <span class="navbar-toggler-icon"> </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-lg-0">
@@ -37,37 +37,67 @@
             <a class="link rounded" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="link rounded" href="#">__</a>
+            <a class="link rounded" href="#projects">Projects</a>
           </li>
           <li class="nav-item mx-2">
             <a class="link rounded" href="#" tabindex="-1">Linkedin</a>
           </li>
           <!-- dark mode button -->
+          <div class="toggle ms-4 my-auto">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label rounded-pill d-flex position-relative">
+              <div class="position-absolute" id="half-circle">
+              </div>
+              <span class="ball"></span>
+            </label>
+          </div>
         </ul>
-        <div class="t-5 toggle content-to-hide">
-          <input type="checkbox" class="checkbox" id="checkbox" />
-          <label for="checkbox" class="checkbox-label position-relative">
-            <i class="fa-solid fa-moon" style="color: #fff"></i>
-            <i class="fa-solid fa-sun" style="color: #fff"></i>
-            <span class="ball"></span>
-          </label>
-        </div>
       </div>
     </div>
   </nav>
 
-  <div id="header" class="header d-flex flex-column  mx-auto  m-0 p-0">
-
-    <div class="wrappertitle position-relative col text-center mx-auto">
-      <h1 class="p-1 rounded headline">testing 123<span class="wave">👋</span> </h1>
-    </div>
-    <div class="m-0 p-0  w-100 h-100" id="headerBG">
+  <div id="header" class="header mx-auto p-0 m-0">
+    <div class="m-0 p-0" id="headerBG">
       <img src="assets/img/headerBG.png" class="position-fixed" id="bg" alt="ai generated background image.">
+    </div>
+    <div class="headerBox container-lg mx-auto p-0">
+      <div class="scroll" style="grid-area: scroll;">
+        <p style="margin-bottom: 1rem;">Stockholm, Sweden<span style="margin-left: 10px;"
+            id="dateTime"></span></p>
+        <div class="wrappertitle col">
+          <p style="font-size: 2.6rem;">
+            Sarah Emmoth is a</p>
+          <h3>
+            <div class="scroller customBorder cursive">
+              <span>
+                Web developer.<br />
+                UX designer.<br />
+                Problemsolver.<br />
+                Loooooser!
+              </span>
+            </div>
+        </div>
+      </div>
+      <div class="rect d-flex align-items-center justify-content-center customBorder position-relative overflow-hidden">
+        <p class="position-absolute text-center" style="filter: blur(2px);z-index: 2;">Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Atque similique eum delectus aut aperiam dolorum facere, autem inventore sit
+          dignissimos numquam aliquam quas laudantium voluptates? Expedita deleniti eligendi totam nisi!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Eligendi aliquid similique quam veniam rem nam,
+          ipsam libero! Ducimus, saepe quia. Autem ipsum maiores test laudantium cupiditate eaque quis est voluptates
+          nam!</p>
+          <div class="rect2 overflow-hidden position-relative top-0">
+            <img class="img-fluid" src="assets/img/pearl.jpg" alt="">
+          </div>
+          <div class="circle position-absolute rounded-circle"></div>
+          <div class="cardHole customBorder m-1 p-2 rounded-circle position-absolute top-0 start-0"></div>
+          <img style="width: 300px; z-index: 2;"
+          class="position-absolute top-0" src="assets/img/avatar.png" alt="Cartoon of myself.">
+      </div>
     </div>
   </div>
 
   <section class="container-lg mx-auto p-0">
-    <div class="Infobox col-12 m-0 text-center  w-100">
+    <div class="Infobox col-12 m-0 text-center w-100">
       <div class="info1 rounded customBG customBorder align-items-center">
         <img class="selfie rounded customBorder" src="assets/img/selfie.jpg"
           alt="Image of a woman with shoulder length dark brown hair and glasses giving a thumbs up.">
@@ -75,11 +105,12 @@
       <div class="info2 customBG rounded customBorder align-items-center">
         <h3 class="mb-4">(｀･ω･´)ﾉ</h3>
         <p class="text-wrap col-10">
-          Hello there! I'm <span class="cursive">Sarah</span>, a curious UX developer .
-          Currently @Jensen YH learning frontend-developement. On my sparetime i enjoy getting down jiggy.
+          Hello there! I'm <span class="cursive">Sarah</span>, a curious UX developer. Currently
+          @Jensen YH learning frontend-developement and web security.
+          When not infront of a computer i like reading, nature docs and exploring new places.
         </p>
         <p class="text-wrap col-10">
-          Seeking internship positions for fall 2024.
+          Seeking internship positions for fall 2024!
         </p>
         <a name="button" class="button hvr-grow-shadow customBorder rounded p-3 mt-2" href="assets/img/CV.pdf"
           target="_blank" role="button">My resume</a>
@@ -87,7 +118,7 @@
     </div>
   </section>
 
-  <section
+  <article
     class="text-center position-relative customBG customBorder rounded container-lg mx-auto p-0 flex-column d-flex">
     <h3 style="font-family: Archivo;" class="w-100 my-4">
       My toolbox
@@ -129,20 +160,21 @@
         </ul>
       </div>
     </div>
-  </section>
+  </article>
 
-  <section class="position-relative customBG rounded customBorder container-lg mx-auto p-0 flex-column d-flex">
+  <section id="projects"
+    class="position-relative mt-5 customBG rounded customBorder overflow-hidden container-lg mx-auto p-0 flex-column d-flex">
     <div class="projects text-center my-5">
-      <h2 class="mb-3">What i've been up to</h2>
+      <h3 class="mb-3">What i've been up to</h3>
       <img class="arrow img-fluid hvr-float" src="assets/img/Arrow.png" />
     </div>
-    <div data-aos="fade-right" class="case col-12 m-0 p-0">
+    <div data-aos="fade-right" class="case customBorder border-start-0 border-end-0 col-12 m-0 p-0">
       <div class="flex1 p-0 align-items-center">
         <img id="velocity" src="assets/img/Velocity.jpg" class="rounded" alt="Picture of a project" />
       </div>
       <div class="flex2 p-0 align-items-center text-center">
         <div class="proj p-3 d-flex flex-column rounded-5 align-items-center">
-          <h2 class="cursive">Velocity</h2>
+          <h3 class="cursive">Velocity</h3>
           <p>UX-design, UI-design and research</p>
           <a name="button" class="button hvr-grow-shadow customBorder rounded p-3" href="Velocity.html"
             role="button">Read case</a>
@@ -155,7 +187,7 @@
       </div>
       <div class="flex2 p-0 align-items-center text-center">
         <div class="proj p-3 d-flex flex-column -5 align-items-center">
-          <h2 class="cursive">Portfolio redesign</h2>
+          <h3 class="cursive">Portfolio redesign</h3>
           <p>Frontend, HTML, CSS and Javascript</p>
           <a name="button" class="button hvr-grow-shadow customBorder rounded p-3" href="portfolioCase.html"
             role="button">Read case</a>
@@ -163,7 +195,7 @@
       </div>
     </div>
     <div style="height: 200px;" data-aos="fadeIn"
-      class="case col-12 m-0 p-0  border-bottom-0 position-relative align-items-center">
+      class="case col-12 m-0 p-0 customBorder border-start-0 border-end-0 border-bottom-0 position-relative align-items-center">
       <p>Stay tuned for more...</p>
     </div>
   </section>
@@ -171,11 +203,11 @@
   <section class="m-0 mt-5 container-lg mx-auto p-0 flex-column d-flex">
     <footer class="border-bottom-0 rounded-top customBG customBorder">
       <div class="mt-2 contact p-4">
-        <p style="font-size: 2.5rem;" class="headline">Got questions?</p>
-        <h2 class="cursive chat">
-          <a class="chat" href=""> Let's chat!</a>
+        <p style="font-size: 2.5rem;" class="headline">Want to chat?</p>
+        <h3 class="cursive chat">
+          Get in touch!
           <img style="width: 20px;" class="footerArrow" src="assets/img/arrowRight.png">
-        </h2>
+        </h3>
       </div>
       <div class="w-100 cr">
         <p class="bottom-0 m-0 p-4 position-absolute "> © 2023 Sarah Emmoth</p>
