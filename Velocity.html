@@ -20,29 +20,32 @@
   <nav class="navbar customBorder border-top-0 border-start-0 border-end-0 navbar-expand-lg sticky-top">
     <div class="container-lg text-center">
       <a class="navbar-brand col-2 ms-0 ps-0" href="index.html"><img class="logo" src="assets/img/logo.png"></a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="">  </span>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-lg-0">
-          <a class="link rounded" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="link rounded" href="#">Resume</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="link rounded" href="#" tabindex="-1">Linkedin</a>
-        </li>
-              <!-- dark mode button -->
-            </ul>
-            <div class="t-5 toggle content-to-hide">
-              <input type="checkbox" class="checkbox" id="checkbox" />
-              <label for="checkbox" class="checkbox-label position-relative">
-                <i class="fa-solid fa-moon" style="color: #fff"></i>
-                <i class="fa-solid fa-sun" style="color: #fff"></i>
-                <span class="ball"></span>
-              </label>
-            </div>
+          <li class="nav-item mx-2">
+            <a class="link rounded" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="link rounded" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="link rounded" href="#" tabindex="-1">Linkedin</a>
+          </li>
+          <!-- dark mode button -->
+          <div class="toggle ms-4 my-auto">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label rounded-pill d-flex position-relative">
+              <div class="position-absolute" id="half-circle">
+              </div>
+              <span class="ball"></span>
+            </label>
+          </div>
+        </ul>
       </div>
     </div>
   </nav>

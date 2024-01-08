@@ -83,8 +83,6 @@
     opacity: 0;
     position: absolute;
   }
-  .toggle{
-  }
   #half-circle {
     width: 12.5px;height: 25px;
     border-radius: 150px  0 0 150px; 
