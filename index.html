@@ -3,10 +3,10 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="startsida"
   integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
-  <head>
-    <meta charset="UTF-8" />
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="assets/css/startsida.css" />
   <link rel="stylesheet" href="assets/css/global.css" />
@@ -21,11 +21,11 @@
   <script src="https://kit.fontawesome.com/f471be9456.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="bootstrap-overrides">
+<body class="darkBg" id="bootstrap-overrides">
 
   <button id="topBtn" class="position-fixed end-0 bottom-0" onclick="goToTop()">
     <img class="w-50 ms-3 upArrow" src="assets/img/upArrow.png" alt="">
-</button>
+  </button>
 
   <nav class="navbar customBorder border-top-0 border-start-0 border-end-0 navbar-expand-lg sticky-top">
     <div class="container-lg text-center">
@@ -41,13 +41,14 @@
             <a class="link" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="link" href="https://github.com/sarahthebest" tabindex="-1">Github</a>
+            <a class="link" href="https://github.com/sarahthebest" target="_blank" tabindex="-1">Github</a>
           </li>
           <li class="nav-item mx-2">
             <a class="link" href="#projects">Projects</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="link" href="#" tabindex="-1">Linkedin</a>
+            <a class="link" href="https://www.linkedin.com/in/sarah-emmoth-696131206/" target="_blank"
+              tabindex="-1">Linkedin</a>
           </li>
           <!-- dark mode button -->
           <div class="toggle ms-4 my-auto">
@@ -69,8 +70,7 @@
     </div>
     <div class="headerBox container-lg mx-auto p-0">
       <div class="scroll" style="grid-area: scroll;">
-        <p style="margin-bottom: 1rem;">Stockholm, Sweden<span style="margin-left: 10px;"
-            id="dateTime"></span></p>
+        <p style="margin-bottom: 1rem;">Stockholm, Sweden<span style="margin-left: 10px;" id="dateTime"></span></p>
         <div class="wrappertitle col">
           <p style="font-size: 2.6rem;">
             Sarah Emmoth is a</p>
@@ -86,23 +86,24 @@
         </div>
       </div>
       <div class="rect d-flex align-items-center justify-content-center customBorder position-relative overflow-hidden">
-        <p class="position-absolute text-center" style="filter:blur(2px);z-index: 2;font-size: 1rem;line-height: 1.2rem;">Lorem ipsum dolor sit, amet
+        <p class="position-absolute text-center"
+          style="filter:blur(2px);z-index: 2;font-size: 1rem;line-height: 1.2rem;">Lorem ipsum dolor sit, amet
           consectetur adipisicing elit. Atque similique eum delectus aut aperiam dolorum facere, autem inventore sit
           dignissimos numquam aliquam quas laudantium voluptates? Expedita deleniti eligendi totam nisi!
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Eligendi aliquid similique quam veniam rem nam,
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aliquid similique quam veniam rem nam,
           ipsam libero! Ducimus, saepe quia. Autem ipsum maiores test laudantium cupiditate eaque quis est voluptates
-          nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Eligendi aliquid similique quam veniam rem nam,
+          nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aliquid similique quam veniam rem nam,
           ipsam libero! Ducimus, saepe quia. Autem ipsum maiores test laudantium cupiditate eaque quis est voluptates
-          nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Eligendi aliquid similique quam veniam rem nam,
+          nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aliquid similique quam veniam rem nam,
           ipsam libero! Ducimus, saepe quia. Autem ipsum maiores test laudantium cupiditate eaque quis est voluptates
           nam!</p>
-          <div class="rect2 overflow-hidden position-relative top-0">
-            <img class="img-fluid" src="assets/img/pearl.jpg" alt="">
-          </div>
-          <div class="circle position-absolute rounded-circle"></div>
-          <div class="cardHole customBorder m-1 p-2 rounded-circle position-absolute top-0 start-0"></div>
-          <img style="width: 300px; z-index: 2;"
-          class="position-absolute top-0" src="assets/img/avatar.png" alt="Cartoon of myself.">
+        <div class="rect2 overflow-hidden position-relative top-0">
+          <img class="img-fluid" src="assets/img/pearl.jpg" alt="">
+        </div>
+        <div class="circle position-absolute rounded-circle"></div>
+        <div class="cardHole customBorder m-1 p-2 rounded-circle position-absolute top-0 start-0"></div>
+        <img style="width: 300px; z-index: 2;" class="position-absolute top-0" src="assets/img/avatar.png"
+          alt="Cartoon of myself.">
       </div>
     </div>
   </div>
@@ -118,10 +119,10 @@
         <p class="text-wrap col-10">
           Hello there! I'm <span class="cursive">Sarah</span>, a curious UX developer. Currently
           @Jensen YH learning frontend-developement and web security.
-          When not infront of a computer i like reading, nature docs and exploring new places.
+          Passionate about fonts, purple and skincare.
         </p>
         <p class="text-wrap col-10">
-          Seeking internship positions for fall 2024!
+          Currently seeking internship positions for fall 2024!
         </p>
         <a name="button" class="button hvr-grow-shadow customBorder rounded p-3 mt-2" href="assets/img/CV.pdf"
           target="_blank" role="button">My resume</a>
@@ -136,12 +137,12 @@
     </h3>
 
     <div style="border-left: 0; border-right: 0;" class="about-me customBorder">
-      <div class="skill align-items-center">
+      <div class="align-items-center skill position-relative">
         <img src="assets/img/arch.png" class="position-absolute textDecoLeft" style="height:150px;">
         <h2 class="mx-auto cursive">UX-design</h2>
       </div>
       <div data-aos="fade-right" class="right-box align-items-center">
-        <ul class="list">
+        <ul class="list d-flex flex-wrap p-0 flex-row align-items-center">
           <li class="tag rounded p-2 customBorder">Figma</li>
           <li class="tag rounded p-2 customBorder">Adobe Illustrator</li>
           <li class="tag rounded p-2 customBorder">UX analysis</li>
@@ -153,21 +154,34 @@
       </div>
     </div>
 
-    <div class="about-me col-12 align-self-center">
-      <div class="skill align-items-center position-relative">
+    <div class="about-me col-12">
+      <div class="align-items-center skill position-relative">
         <img src="assets/img/archRight.png" class="position-absolute textDeco" style="height:150px;">
         <h2 class="cursive">Frontend</h2>
       </div>
       <div data-aos="fade-right" class="right-box align-items-center">
-        <ul class="list ">
-          <li class="tag rounded p-2 customBorder">HTML5 </li>
-          <li class="tag rounded p-2 customBorder">CSS</li>
-          <li class="tag rounded p-2 customBorder">Javascript</li>
-          <li class="tag rounded p-2 customBorder">React</li>
-          <li class="tag rounded p-2 customBorder">Node</li>
-          <li class="tag rounded p-2 customBorder">Github</li>
-          <li class="tag rounded p-2 customBorder">Bootstrap</li>
-          <li class="tag rounded p-2 customBorder">Express.js</li>
+        <ul class="list d-flex flex-wrap p-0 flex-row align-items-center">
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/html.png" alt="">
+          </li>
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/css.png" alt="">
+          </li>
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/js.png" alt="">
+          </li>
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/react.png" alt="">
+          </li>
+          <li class="tech ms-2 rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/node.png" alt="">
+          </li>
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/gh.png" alt="">
+          </li>
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/bs.png" alt="">
+          </li>
         </ul>
       </div>
     </div>

@@ -58,6 +58,9 @@
   --purple: #c940ff;
   --bg: #1e1222;
 }
+.darkBg{
+  background-color: var(--bg);
+}
 
 /* removes hover effects */
 .noHover {
@@ -75,7 +78,7 @@
 /* darkmode button */
 .checkbox-label {
   background-color: var(--dark);
-  outline: var(--dark) solid 2px;
+  outline: var(--light) solid 2px;
   width: 25px;
   height: 25px;
   align-items: center;
@@ -114,16 +117,17 @@
   height: 50px;
   border-radius: 50px 0px 0px 0px;
 }
-body {
+#bootstrap-overrides .body {
   margin: 0;
   overflow-y: scroll;
+  background-color: var(--bg) !important;
 }
 .customBG {
-  background-color: rgba(245, 245, 245, 0.389);
+  background-color: #43434353;
   backdrop-filter: blur(5px);
 }
 .customBorder {
-    border: rgba(23, 23, 23, 0.3254901961) 1px solid;
+    border: rgba(255, 255, 255, 0.584) 1px solid;
   }
 /* navbar */
 nav {
@@ -135,7 +139,7 @@ nav {
   text-decoration: none;
   font-family: "Archivo", sans-serif;
   font-size: 1.2rem;
-  color: var(--dark);
+  color: var(--light);
   display: block;
   padding: 10px;
   width: fit-content;
@@ -143,7 +147,7 @@ nav {
 .logo {
   font-size: 1.5rem;
   width: 80px;
-  filter: invert(0);
+  filter: invert(1);
 }
 
 #bootstrap-overrides .link:hover {
@@ -162,53 +166,48 @@ footer {
   width: fit-content;
 }
 .footerArrow {
-  filter: invert(0);
+  filter: invert(1);
 }
 .chat {
-  color: var(--dark);
+  color: var(--light);
   text-decoration: none;
 }
 .chat:hover {
-  color: var(--dark);
-  text-decoration: underline 1px var(--dark);
+  color: var(--light);
+  text-decoration: underline 1px var(--light);
 }
 .shadow {
   box-shadow: 1px 10px 10px rgba(160, 160, 160, 0.26);
 }
 /* darkmode */
 body.lightToDark {
-  background-color: var(--bg);
+  background-color: var(--light);
 }
 body.lightToDark .link {
-  color: #dee2e6;
+  color: var(--dark);
 }
-body.lightToDark #bootstrap-overrides.navbar-toggler-icon {
-  filter: invert(1);
-}
-body.lightToDark .logo {
-  filter: invert(1);
-}
+body.lightToDark .logo, 
 body.lightToDark .footerArrow {
-  filter: invert(1);
+  filter: invert(0);
 }
 body.lightToDark .customBG {
-  background-color: #43434353;
+  background-color: rgba(245, 245, 245, 0.389);
 }
 body.lightToDark .chat {
-  color: var(--light);
+  color: var(--dark);
 }
 body.lightToDark .chat:hover {
-  color: var(--light);
-  text-decoration: underline 2px var(--light);
+  color: var(--dark);
+  text-decoration: underline 2px var(--dark);
 }
 body.lightToDark .checkbox-label {
-  outline: #ffffff 2px solid;
+  outline: var(--dark) 2px solid;
   transition: 0s !important;
   background-color: #ffffff;
 }
 
 body.lightToDark .customBorder {
-    border: var(--light) 1px solid;
+    border: #1717175d 1px solid;
   }
   
 
@@ -289,7 +288,7 @@ blockquote,
 li,
 p,
 a {
-  color: var(--dark);
+  color: var(--light);
   font-family: "Archivo";
 }
 .marker {
@@ -300,7 +299,7 @@ a {
 }
 p {
   font-family: "Archivo", sans-serif;
-  color: var(--dark);
+  color: var(--light);
 }
 .headline {
   font-family: "Archivo Black", sans-serif;
