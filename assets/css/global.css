@@ -273,6 +273,9 @@ body.DarkToLight {
 body.DarkToLight .link {
   color: var(--dark);
 }
+body.DarkToLight #bootstrap-overrides a{
+  color: var(--dark);
+}
 body.DarkToLight .logo, 
 body.DarkToLight .footerArrow {
   filter: invert(0);
@@ -385,6 +388,9 @@ a {
   color: var(--light);
   font-family: "Archivo";
 }
+/* a:hover{
+  text-decoration: underline 1px var(--light);
+} */
 .marker {
   background-color: var(--purple);
   color: #f1f4f7;
