@@ -30,10 +30,6 @@
 .circle {
   margin-left: 25vw;
 }
-.circle2 {
-left: 0;  
-margin-left: -30vw;
-}
 
 }
 /* medium */
@@ -48,11 +44,10 @@ margin-left: -30vw;
     height: 100%;
     width: max-content;
   }
-  .circle,
-  .circle2{
+  .circle{
     width: 300px;
     height: 400px; 
-    margin-left: 60px;
+    margin-left: 300px;
   }
 }
 
@@ -71,7 +66,11 @@ margin-left: -30vw;
   .container-lg * :hover {
     pointer-events: none !important;
   }
-  
+  .circle{
+    width: 300px;
+    height: 400px; 
+    margin-left: 15vw;
+  }
 }
 #headerBG{
   width:100%;
