@@ -295,7 +295,9 @@ body.DarkToLight .checkbox-label {
   transition: 0s !important;
   background-color: var(--light);
 }
-
+body.DarkToLight .spanBorder{
+  border: 1px solid var(--dark);
+}
 body.DarkToLight .customBorder {
     border: #1717175d 1px solid;
   }
@@ -312,6 +314,8 @@ body.DarkToLight .circle2{
 body.DarkToLight .navbar-toggler-icon{
 filter: invert(0);
 }
+
+
 /* animations */
 
 .upArrow:hover{ 
@@ -388,15 +392,6 @@ a {
   color: var(--light);
   font-family: "Archivo";
 }
-/* a:hover{
-  text-decoration: underline 1px var(--light);
-} */
-.marker {
-  background-color: var(--purple);
-  color: #f1f4f7;
-  border-radius: 50rem;
-  padding: 4px;
-}
 p {
   font-family: "Archivo", sans-serif;
   color: var(--light);
@@ -410,7 +405,15 @@ p {
 .mono {
   font-family: "Roboto Mono", monospace;
 }
-
+.marker {
+  background-color: var(--purple);
+  color: #f1f4f7;
+  border-radius: 50rem;
+  padding: 4px;
+}
+.spanBorder{
+  border: 1px solid var(--light);
+}
  h1 {
   font-size: 3rem;
   color: var(--light);
