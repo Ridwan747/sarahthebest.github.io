@@ -199,7 +199,7 @@
 }
 .customBG {
   background-color: rgba(0, 0, 0, 0.786);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 .customBorder {
     border: rgba(255, 255, 255, 0.389) 1px solid;
