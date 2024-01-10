@@ -54,6 +54,7 @@
 .grid-container {
   z-index: 1;
   flex: 1;
+  background-color: var(--dark);
   display: grid;
   grid-template-rows: 400px repeat(auto);
   align-items: start;

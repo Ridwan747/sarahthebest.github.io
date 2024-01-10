@@ -18,18 +18,17 @@
   }
   .circle,
 .circle2{
-  width: 60vw;
-  height: 100vh;
-  top:0;
+  width: 50vw;
+  height: 80vh;
+  top:20vh;
   z-index: -1;
   border-radius: 50%;
   filter: blur(20px);
   opacity: 30%;
-  background: radial-gradient(circle, rgba(21, 28, 78, 0.538) 18%, rgba(140, 255, 245, 0.636) 73%, rgba(25, 0, 108, 0.647) 61%); 
+  background: radial-gradient(circle, rgba(169, 36, 155, 0.538) 18%, rgba(238, 184, 83, 0.636) 73%, rgba(208, 199, 134, 0.647) 61%); 
 }
 .circle {
-  right: 0;
-  margin-right: -30vw;
+  margin-left: 25vw;
 }
 .circle2 {
 left: 0;  
@@ -49,11 +48,12 @@ margin-left: -30vw;
     height: 100%;
     width: max-content;
   }
-  /* .circle,
+  .circle,
   .circle2{
     width: 300px;
-    height: 600px; 
-  } */
+    height: 400px; 
+    margin-left: 60px;
+  }
 }
 
 /*  small screen */
@@ -307,7 +307,7 @@ body.DarkToLight #half-circle {
 body.DarkToLight .circle,
 body.DarkToLight .circle2{
   opacity: 60%;
-  background: radial-gradient(circle, rgba(210, 186, 255, 0.538) 50%, rgba(132, 0, 255, 0.429) 70%, rgba(0, 238, 255, 0.647) 61%); 
+  background: radial-gradient(circle, rgba(242, 255, 186, 0.538) 50%, rgba(255, 55, 0, 0.429) 70%, rgba(255, 0, 0, 0.647) 61%); 
 }
 body.DarkToLight .navbar-toggler-icon{
 filter: invert(0);
