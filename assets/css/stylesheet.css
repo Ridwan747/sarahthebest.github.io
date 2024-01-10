@@ -93,7 +93,7 @@
 }
 
 .tag:hover {
-  color: var(--purple);
+  color: var(--orange);
   box-shadow: rgba(0, 0, 0, 0.391) 0px 4px 12px;
 }
 

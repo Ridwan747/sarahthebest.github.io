@@ -130,7 +130,7 @@
 :root {
   --dark: #101010;
   --light: #eae4ed;
-  --purple: #c940ff;
+  --orange: #ff6040;
   --bg: #1e1222;
 }
 .darkBg{
@@ -235,8 +235,8 @@ nav {
 }
 #bootstrap-overrides .link:hover {
   filter: brightness(120%);
-  color: var(--purple);
-  text-decoration: underline 1px var(--purple);
+  color: var(--orange);
+  text-decoration: underline 1px var(--orange);
 }
  .navbar-toggler-icon{
   filter: invert(1);
@@ -405,7 +405,7 @@ p {
   font-family: "Roboto Mono", monospace;
 }
 .marker {
-  background-color: var(--purple);
+  background-color: var(--orange);
   color: #f1f4f7;
   border-radius: 50rem;
   padding: 4px;
