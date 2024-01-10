@@ -33,10 +33,6 @@
     grid-template-columns: 100%;
     grid-template-areas: " header" " projectB" " phase1" " phase2" " phase3" " phase4" " phase5" " results" "sidebar";
   }
-  .grid-item2 {
-    position: relative;
-    visibility: hidden;
-  }
 
   .proto {
     grid-template-columns: 100%;
@@ -117,13 +113,12 @@
 .phase1,
 .phase2,
 .phase3,
-.phase4 {
+.phase4,
+#grid-item2 {
   padding: 3%;
   margin-bottom: 5%;
-  background-color: #fbfbfb9b;
   backdrop-filter: blur(15px);
 }
-
 #grid-item4 {
   grid-area: phase1;
   margin-top: 20px;
@@ -176,9 +171,11 @@
 /* accordion */
 
 #bootstrap-overrides .accordion-item {
-  background-color: rgba(255, 255, 255, 0.837);
+  background-color: var(--light);
 }
-#bootstrap-overrides .accordion-button:not(.collapsed) {
+#bootstrap-overrides .accordion-header {
+  background-color: var(--light);
+}#bootstrap-overrides .accordion-button:not(.collapsed) {
   color: var(--dark);
   background-color: var(--light);
   border: 0;
@@ -189,9 +186,13 @@
   outline: 0;
   box-shadow: none;
 }
+#bootstrap-overrides .accordion{
+  --bs-accordion-bg: var(--light);
+}
 #bootstrap-overrides .accordion-body {
   color: var(--dark);
-  font-family: "Archivo";}
+  font-family: "Archivo";
+}
 .wireframe {
   display: flex;
   flex: row;
@@ -269,56 +270,54 @@ blockquote {
 }
 
 /* Darkmode */
-body.lightToDark h1,
-body.lightToDark h2,
-body.lightToDark h3,
-body.lightToDark h4,
-body.lightToDark h5,
-body.lightToDark h6,
-body.lightToDark h7,
-body.lightToDark h8,
-body.lightToDark p,
-body.lightToDark blockquote {
-  color: var(--light);
+body.DarkToLight h1,
+body.DarkToLight h2,
+body.DarkToLight h3,
+body.DarkToLight h4,
+body.DarkToLight h5,
+body.DarkToLight h6,
+body.DarkToLight p,
+body.DarkToLight blockquote {
+  color: var(--dark);
 }
 
-body.lightToDark blockquote {
-  border: 4px solid var(--light);
+body.DarkToLight blockquote {
+  border: 4px solid var(--dark);
   border-top: 0;
   border-bottom: 0;
   border-right: 0;
 }
 
-body.lightToDark .customBorder {
-  border: var(--light) 1px solid;
+body.DarkToLight .customBorder {
+  border: var(--dark) 1px solid;
 }
 
-body.lightToDark .grid-container {
+body.DarkToLight .grid-container {
   background-color: rgba(23, 23, 23, 0.3254901961);
 }
 
-body.lightToDark li {
-  color: var(--light);
+body.DarkToLight li {
+  color: var(--dark);
 }
 
-body.lightToDark .contents li {
-  color: var(--light);
+body.DarkToLight .contents li {
+  color: var(--dark);
 }
-body.lightToDark .frame {
+body.DarkToLight .frame {
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.636);
 }
-body.lightToDark .arro {
-filter: invert(1);
+body.DarkToLight .arro {
+filter: invert(0);
 }
-body.lightToDark #bootstrap-overrides .accordion-item {
-  color: var(--light);
+body.DarkToLight #bootstrap-overrides .accordion-item {
+  color: var(--dark);
   background-color: var(--dark);
   border: 0;
   box-shadow: none;
 }
-body.lightToDark .phase1,
-body.lightToDark .phase2,
-body.lightToDark .phase3,
-body.lightToDark .phase4 {
-  background-color: #00000054;
+body.DarkToLight .phase1,
+body.DarkToLight .phase2,
+body.DarkToLight .phase3,
+body.DarkToLight .phase4 {
+  /* background-color: #00000054; */
 }

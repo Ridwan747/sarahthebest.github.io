@@ -19,7 +19,7 @@
   <script src="https://kit.fontawesome.com/f471be9456.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="bootstrap-overrides">
+<body class="darkBg" id="bootstrap-overrides">
 
   <button id="topBtn" class="position-fixed end-0 bottom-0" onclick="goToTop()">
     <img class="w-50 ms-3 upArrow" src="assets/img/upArrow.png" alt="">
@@ -57,10 +57,16 @@
       </div>
     </div>
   </nav>
-  <div class="m-0 p-0 col w-100 h-100" id="headerBG">
+  <!-- <div class="m-0 p-0 col w-100 h-100" id="headerBG">
     <img src="assets/img/headerBG.png" class="position-fixed img-fluid w-100" id="bg"
       alt="ai generated background image.">
-  </div>
+  </div> -->
+    <div class="m-0 p-0 position-fixed overflow-hidden" id="headerBG">
+      <div class="circle position-absolute linear"></div>
+      <!-- <img id="mesh" class="position-absolute opacity-25" src="assets/img/mesh.png" alt=""> -->
+      <div class="circle2 position-absolute linear"></div>
+      <!-- <div class="circle3 position-absolute start-0 bottom-0 linear"></div> -->
+    </div>
 
   <main>
     <div class="grid-container g-0 container-lg mx-auto border-top-0 rounded-bottom customBG customBorder">
@@ -74,7 +80,7 @@
           </ol>
         </div>
       </div>
-      <div id="grid-item2" class="col-11 mt-4 customBorder mx-auto">
+      <div id="grid-item2" class="col-11 mt-4 mb-0 customBorder mx-auto">
         <div style="padding: 3%;">
         <h2>Background</h2>
         <p>
@@ -104,10 +110,12 @@
             </p>
           </div>
           <div class="row1">
-            <img class="rounded img-fluid customBorder" src="assets/img/portfolio.gif" alt="Picture of a project" />
+            <div class="imgContainer" style="height: 400px;overflow:scroll;">
+            <img class="rounded img-fluid" src="assets/img/portfolio.png" alt="Picture of my old portfolio website." />
             <figcaption class="figure-caption">
               <p>My old portfolio </p>
             </figcaption>
+          </div>
             <p>While i still find elements of my portfolio pretty cool i still thought it was
               largely outdated. I utilized neobrutalism, color-blocking and bold fonts/colors. My personal style
               has since changed and i want my portfolio to be a reflection of that.

@@ -19,6 +19,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
   <script src="https://kit.fontawesome.com/f471be9456.js" crossorigin="anonymous"></script>
+  <script src="grained.js"></script>
 </head>
 
 <body class="darkBg" id="bootstrap-overrides">
@@ -29,24 +30,24 @@
 
   <nav class="navbar customBorder border-top-0 border-start-0 border-end-0 navbar-expand-lg sticky-top">
     <div class="container-lg text-center">
-      <a class="navbar-brand col-2 ms-0 ps-0" href="index.html"><img class="logo" src="assets/img/logo.png"></a>
+      <a class="navbar-brand ms-0 ps-0" href="index.html"><img class="logo" src="assets/img/logo.png"></a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"> </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-lg-0">
-          <li class="nav-item mx-2">
+        <ul class="navbar-nav mb-lg-0">
+          <li class="nav-item">
             <a class="link" aria-current="page" href="index.html">Home</a>
           </li>
-          <li class="nav-item mx-2">
+          <li class="nav-item">
             <a class="link" href="https://github.com/sarahthebest" target="_blank" tabindex="-1">Github</a>
           </li>
-          <li class="nav-item mx-2">
+          <li class="nav-item">
             <a class="link" href="#projects">Projects</a>
           </li>
-          <li class="nav-item mx-2">
+          <li class="nav-item">
             <a class="link" href="https://www.linkedin.com/in/sarah-emmoth-696131206/" target="_blank"
               tabindex="-1">Linkedin</a>
           </li>
@@ -65,9 +66,14 @@
   </nav>
 
   <div id="header" class="header mx-auto p-0 m-0">
-    <div class="m-0 p-0" id="headerBG">
-      <img src="assets/img/headerBG.png" class="position-fixed" id="bg" alt="ai generated background image.">
+    <div class="m-0 p-0 position-fixed overflow-hidden" id="headerBG">
+      <img style="filter: blur(1px);" class="position-absolute w-100 h-100" src="assets/img/headerBG.png">
+      <!-- <div class="circle position-absolute linear"></div> -->
+      <!-- <img id="mesh" class="position-absolute opacity-25" src="assets/img/mesh.png" alt=""> -->
+      <!-- <div class="circle2 position-absolute linear"></div> -->
+      <!-- <div class="circle3 position-absolute start-0 bottom-0 linear"></div> -->
     </div>
+
     <div class="headerBox container-lg mx-auto p-0">
       <div class="scroll" style="grid-area: scroll;">
         <p style="margin-bottom: 1rem;">Stockholm, Sweden<span style="margin-left: 10px;" id="dateTime"></span></p>
@@ -97,10 +103,6 @@
           nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aliquid similique quam veniam rem nam,
           ipsam libero! Ducimus, saepe quia. Autem ipsum maiores test laudantium cupiditate eaque quis est voluptates
           nam!</p>
-        <div class="rect2 overflow-hidden position-relative top-0">
-          <img class="img-fluid" src="assets/img/pearl.jpg" alt="">
-        </div>
-        <div class="circle position-absolute rounded-circle"></div>
         <div class="cardHole customBorder m-1 p-2 rounded-circle position-absolute top-0 start-0"></div>
         <img style="width: 300px; z-index: 2;" class="position-absolute top-0" src="assets/img/avatar.png"
           alt="Cartoon of myself.">
@@ -119,7 +121,7 @@
         <p class="text-wrap col-10">
           Hello there! I'm <span class="cursive">Sarah</span>, a curious UX developer. Currently
           @Jensen YH learning frontend-developement and web security.
-          Passionate about fonts, purple and skincare.
+          Passionate about bold fonts, purple and flowers.
         </p>
         <p class="text-wrap col-10">
           Currently seeking internship positions for fall 2024!
@@ -139,7 +141,7 @@
     <div style="border-left: 0; border-right: 0;" class="about-me customBorder">
       <div class="align-items-center skill position-relative">
         <img src="assets/img/arch.png" class="position-absolute textDecoLeft" style="height:150px;">
-        <h2 class="mx-auto cursive">UX-design</h2>
+        <h2 class="mx-auto cursive">Design</h2>
       </div>
       <div data-aos="fade-right" class="right-box align-items-center">
         <ul class="list d-flex flex-wrap p-0 flex-row align-items-center">
@@ -207,8 +209,8 @@
       </div>
     </div>
     <div data-aos="fade-left" class="case col-12 m-0 p-0 rounded-bottom border-0">
-      <div class="flex1 align-items-center p-0">
-        <img class="rounded" id="case2" src="assets/img/portfolio.gif" alt="Picture of a project" />
+      <div class="flex1 align-items-center">
+        <img class="rounded img-fluid" id="case2" src="assets/img/portfolio.png" alt="Picture of my old portfolio website." />
       </div>
       <div class="flex2 p-0 align-items-center text-center">
         <div class="proj p-3 d-flex flex-column -5 align-items-center">

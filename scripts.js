@@ -1,7 +1,7 @@
 const checkbox = document.getElementById("checkbox");
 
 checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("lightToDark");
+  document.body.classList.toggle("DarkToLight");
 });
 
 // Function to update the date and time
@@ -73,3 +73,5 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
+
+

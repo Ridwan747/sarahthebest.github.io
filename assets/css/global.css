@@ -16,9 +16,26 @@
     width: 100%;
     z-index: 0;
   }
-  h7 {
-    margin-bottom: 10px;
-  }
+  .circle,
+.circle2{
+  width: 60vw;
+  height: 100vh;
+  top:0;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(20px);
+  opacity: 30%;
+  background: radial-gradient(circle, rgba(21, 28, 78, 0.538) 18%, rgba(140, 255, 245, 0.636) 73%, rgba(25, 0, 108, 0.647) 61%); 
+}
+.circle {
+  right: 0;
+  margin-right: -30vw;
+}
+.circle2 {
+left: 0;  
+margin-left: -30vw;
+}
+
 }
 /* medium */
 @media screen and (max-width: 1000px) {
@@ -32,6 +49,11 @@
     height: 100%;
     width: max-content;
   }
+  /* .circle,
+  .circle2{
+    width: 300px;
+    height: 600px; 
+  } */
 }
 
 /*  small screen */
@@ -49,12 +71,66 @@
   .container-lg * :hover {
     pointer-events: none !important;
   }
+  
+}
+#headerBG{
+  width:100%;
+  height:100vh;
+  z-index: 0;
+}
+#headerBG:after{
+  content:"";
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+  height: 300%;
+  width: 300%;
+  position: fixed;
+  opacity:5%;
+   animation: animateGrain 10s steps(8) infinite;
+}
+#mesh{
+  width: 2000px;
+  top: 0; margin-right: 600px;
 }
 
+@keyframes animateGrain{
+  0%, 100% { transform:translate(0, 0) }
+  10%{
+    transform:translate(-5%,-10%)
+  }
+  20%{
+    transform:translate(-15%,-20%)
+  }
+  30%{
+    transform:translate(-5%,-10%)
+  }
+  40%{
+    transform:translate(-15%,-20%)
+  }
+  
+  50%{
+    transform:translate(-5%,-10%)
+  }
+  60%{
+    transform:translate(-15%,-20%)
+  }
+  70%{
+    transform:translate(-5%,-10%)
+  }
+  80%{
+    transform:translate(-15%,-20%)
+  }
+  90%{
+    transform:translate(-5%,-10%)
+  }
+  100%{
+    transform:translate(-15%,-20%)
+  }
+ 
+}
 /* my colors */
 :root {
-  --dark: #171717;
-  --light: #EFEFEF;
+  --dark: #101010;
+  --light: #eae4ed;
   --purple: #c940ff;
   --bg: #1e1222;
 }
@@ -95,7 +171,7 @@
   width: 12.5px;
   height: 25px;
   border-radius: 150px 0 0 150px;
-  background-color: white;
+  background-color: var(--light);
   left: 0;
   transition: 0s !important;
 }
@@ -123,13 +199,16 @@
   background-color: var(--bg) !important;
 }
 .customBG {
-  background-color: #43434353;
+  background-color: rgba(0, 0, 0, 0.786);
   backdrop-filter: blur(5px);
 }
 .customBorder {
-    border: rgba(255, 255, 255, 0.584) 1px solid;
+    border: rgba(255, 255, 255, 0.389) 1px solid;
   }
 /* navbar */
+.navbar-nav {
+  float: right;
+}
 nav {
   z-index: 5;
   backdrop-filter: blur(30px);
@@ -149,12 +228,20 @@ nav {
   width: 80px;
   filter: invert(1);
 }
-
+.nav-item{
+  width: fit-content;
+}
+.navbar-expand-lg .navbar-collapse{
+  justify-content: right;
+}
 #bootstrap-overrides .link:hover {
   filter: brightness(120%);
   color: var(--purple);
   text-decoration: underline 1px var(--purple);
 }
+ .navbar-toggler-icon{
+  filter: invert(1);
+  }
 
 /* footer */
 
@@ -180,40 +267,47 @@ footer {
   box-shadow: 1px 10px 10px rgba(160, 160, 160, 0.26);
 }
 /* darkmode */
-body.lightToDark {
+body.DarkToLight {
   background-color: var(--light);
 }
-body.lightToDark .link {
+body.DarkToLight .link {
   color: var(--dark);
 }
-body.lightToDark .logo, 
-body.lightToDark .footerArrow {
+body.DarkToLight .logo, 
+body.DarkToLight .footerArrow {
   filter: invert(0);
 }
-body.lightToDark .customBG {
-  background-color: rgba(245, 245, 245, 0.389);
+body.DarkToLight .customBG {
+  background-color: rgba(255, 255, 255, 0.669);
 }
-body.lightToDark .chat {
+body.DarkToLight .chat {
   color: var(--dark);
 }
-body.lightToDark .chat:hover {
+body.DarkToLight .chat:hover {
   color: var(--dark);
   text-decoration: underline 2px var(--dark);
 }
-body.lightToDark .checkbox-label {
+body.DarkToLight .checkbox-label {
   outline: var(--dark) 2px solid;
   transition: 0s !important;
-  background-color: #ffffff;
+  background-color: var(--light);
 }
 
-body.lightToDark .customBorder {
+body.DarkToLight .customBorder {
     border: #1717175d 1px solid;
   }
-  
 
-body.lightToDark #half-circle {
+body.DarkToLight #half-circle {
   background-color: var(--dark);
   transition: 0s !important;
+}
+body.DarkToLight .circle,
+body.DarkToLight .circle2{
+  opacity: 60%;
+  background: radial-gradient(circle, rgba(210, 186, 255, 0.538) 50%, rgba(132, 0, 255, 0.429) 70%, rgba(0, 238, 255, 0.647) 61%); 
+}
+body.DarkToLight .navbar-toggler-icon{
+filter: invert(0);
 }
 /* animations */
 
@@ -311,9 +405,9 @@ p {
   font-family: "Roboto Mono", monospace;
 }
 
-#bootstrap-overrides h1 {
+ h1 {
   font-size: 3rem;
-  font-weight: bolder;
+  color: var(--light);
   margin-bottom: 20px;
 }
 
@@ -323,4 +417,19 @@ p {
 #bootstrap-overrides h3,
 #bootstrap-overrides h4 {
   font-size: 2rem;
+}
+
+.linear {
+  animation: grow 10s ease-in-out infinite;
+}
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
