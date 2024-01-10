@@ -79,12 +79,12 @@
 }
 #headerBG:after{
   content:"";
-  background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+  background-image: url(/assets/img/noise.png);
   height: 300%;
   width: 300%;
   position: fixed;
   opacity:5%;
-   animation: animateGrain 10s steps(8) infinite;
+  animation: animateGrain 10s steps(8) infinite;
 }
 #mesh{
   width: 2000px;
