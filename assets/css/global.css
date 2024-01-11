@@ -79,7 +79,7 @@
 }
 #headerBG:after{
   content:"";
-  background-image: url(/assets/img/noise.png);
+  background-image: url(/assets/img/noise.webp);
   height: 300%;
   width: 300%;
   position: fixed;
