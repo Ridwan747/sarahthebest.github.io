@@ -137,11 +137,6 @@
   background-color: var(--bg);
 }
 
-/* removes hover effects */
-.noHover {
-  pointer-events: none;
-}
-
 /* class to align items center */
 .align-items-center {
   display: flex;
@@ -404,12 +399,6 @@ p {
 .mono {
   font-family: "Roboto Mono", monospace;
 }
-.marker {
-  background-color: var(--orange);
-  color: #f1f4f7;
-  border-radius: 50rem;
-  padding: 4px;
-}
 .spanBorder{
   border: 1px solid var(--light);
 }
@@ -424,7 +413,7 @@ p {
 }
 #bootstrap-overrides h3,
 #bootstrap-overrides h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .linear {
