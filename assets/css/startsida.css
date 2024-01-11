@@ -168,6 +168,11 @@
   height: fit-content;
 }
 
+#mountain{
+  image-rendering: optimizeSpeed;
+  background-size: cover;
+}
+
 .wrappertitle {
   max-width: fit-content;
   color: var(--dark);
