@@ -1,3 +1,4 @@
+// Darkmode toggle btn
 const checkbox = document.getElementById("checkbox");
 
 checkbox.addEventListener("change", () => {
@@ -15,7 +16,11 @@ function updateDateTime() {
   var dateTimeString = currentDate.toLocaleString('en-GB', options); 
   document.getElementById("dateTime").innerHTML = dateTimeString;
 }
+updateDateTime();
 
+setInterval(updateDateTime, 1000);
+
+// top btn
 var mybutton = document.getElementById("topBtn");
 
 window.onscroll = function () {
@@ -41,11 +46,6 @@ function goToTop() {
   }
 }
 
-// Initial call to display date and time
-updateDateTime();
-
-// Update the date and time every second (1000 milliseconds)
-setInterval(updateDateTime, 1000);
 
 window.addEventListener('load', function () {
   AOS.init();
