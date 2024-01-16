@@ -277,7 +277,7 @@ li {
 
 .flex1 {
   height: 400px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .flex2 {
@@ -289,16 +289,6 @@ li {
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
-}
-
-#velocity {
-  height: 95%;
-  width: 95%;
-}
-
-#case2 {
-  height: 95%;
-  width: 95%;
 }
 
 .button {
