@@ -81,7 +81,7 @@
   height: 100vh;
   z-index: 0;
 }
-picture:after {
+#headerBG:after {
   content: "";
   background-image: url(/assets/img/noise.webp);
   height: 300%;
