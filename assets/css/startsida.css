@@ -411,7 +411,7 @@ body.DarkToLight .scroller {
 
 /* Scroller styling */
 .scroller {
-  height: 7.2vh;
+  height: 68px;
   line-height: 4rem;
   position: relative;
   overflow: hidden;
