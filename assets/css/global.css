@@ -17,7 +17,8 @@
     z-index: 0;
   }
   .circle,
-  .circle2 {
+  .circle2,
+  .circle3 {
     width: 50vw;
     height: 80vh;
     top: 20vh;
@@ -34,6 +35,12 @@
   }
   .circle {
     margin-left: 25vw;
+  }
+  .circle2{
+    margin-left: -650px;
+  }
+  .circle3{
+    margin-right: -650px;
   }
 }
 /* medium */
