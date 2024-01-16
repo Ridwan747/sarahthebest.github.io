@@ -169,6 +169,13 @@
   flex-direction: row;
 }
 
+.window{
+  width: fit-content;
+  overflow-x: auto;
+  margin-left: 0; /* Reset margin */
+  margin-right: 0; /* Reset margin */
+}
+
 /* accordion */
 
 #bootstrap-overrides .accordion-item {
@@ -316,9 +323,3 @@ body.DarkToLight #bootstrap-overrides .accordion-item {
   border: 0;
   box-shadow: none;
 }
-/* body.DarkToLight .phase1,
-body.DarkToLight .phase2,
-body.DarkToLight .phase3,
-body.DarkToLight .phase4 {
-  background-color: #00000054;
-} */

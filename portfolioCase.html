@@ -123,10 +123,16 @@
             <p class="mb-5">
               I decided to embrace Bootstrap for my
               portfolio redesign. It seemed like the perfect toolkit to enhance responsiveness which was a issue in my
-              previous portfolio. </p>
+              previous portfolio. Bootstrap's semantic class system made it easier for me to
+              maintain order in my CSS files</p>
               <div>
               <img src="./assets/img/icons/bs.webp" style="width: 10%;"  alt="">
-              
+              <div class="d-flex justify-content-center">
+                <pre class="window customBorder rounded p-2">
+                  <code style="color: var(--orange);">
+&lt;section class="container-lg mx-auto p-0"&gt;<br>&lt;div class="Infobox col-12 m-0 text-center w-100"&gt; &lt;/div&gt;<br>&lt;/section&gt;</code>
+                </pre>
+              </div>
             </div>
           </div>
         </div>
@@ -217,12 +223,62 @@
             <p class="mb-5">
               Directory of issues and problems!
             </p>
-            <p>
-              Since enrolling in my program i had gotten a much firmer grasp of html, css, javascript and Bootstrap
-              so i sought to utilize these when redesigning my portfolio. I also considered what kind of layout
-              I wanted to do and looked at tons of portfolios online for inspiration. I decided to stick to my old
-              layout
-            </p>
+            <div class="accordion accordion-flush rounded">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Using github!
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">I decided to use GitHub to host and manage my portfolio. I had very little
+                    experience with GitHub prior to enrolling
+                    in my program but i caught on fairly quick. I also discovered GitHub Pages and decided to host my
+                    portfolio there. It was a wise decision economically but it also made sense
+                    <br>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Incorporating bootstrap!
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    I made the excecutive decision to use Bootstrap 5 for this project. It made the issue of
+                      responsiveness much easier to solve
+                      and made my CSS file a lot prettier. <br>
+                      Bootstrap came with its own issues though that i wasn't entirely equipped to solve on my own which
+                      made me rely on google a lot.
+                      One issue was the Bootstrap default styles. Eg. wanting to override a bs default background was a
+                      bit tricky for me
+                      but i solved it by adding a id tag to body so it made my selectors more specific.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Website performance
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Later in developement i decided to analyse how my website perfomred in terms of
+                    speed, accessibility and best practices using PageSpeed. I discovered that the header image i used was 
+                    VERY slow to load in fact none of my images were optimized or responsive and THAT was a problem.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
