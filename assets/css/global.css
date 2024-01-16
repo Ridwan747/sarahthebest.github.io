@@ -87,6 +87,7 @@
   height: 300%;
   width: 300%;
   position: fixed;
+  z-index: 5;
   opacity: 5%;
   animation: animateGrain 10s steps(8) infinite;
 }
