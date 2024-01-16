@@ -66,11 +66,19 @@
 
   <div id="header" class="header mx-auto p-0 m-0">
     <div class="m-0 p-0 position-fixed overflow-hidden" id="headerBG">
-      <img id="mountain" 
+      <picture id="mountain"
+      style="filter: blur(1px);"
+      class="position-absolute w-100 h-100">
+        <source media="(min-width:400px )" srcset="assets/img/headerBG.webp">
+        <source media="(min-width:401px )" srcset="assets/img/headerBG.webp">
+        <source media="(min-width:901px )" srcset="assets/img/headerBG.webp">
+        <img src="assets/img/headerBG.webp" alt="Mountain">
+      </picture>
+      <!-- <img id="mountain" 
       style="filter: blur(1px);" 
       class="position-absolute w-100 h-100"
       srcset="300×200, 1060×706, 1460×973, 1780×1186, 2048×1365, 2290×1526, 2500×1666" 
-      src="assets/img/headerBG.webp">
+      src="assets/img/headerBG.webp"> -->
       <div class="circle position-absolute linear"></div>
     </div>
 
