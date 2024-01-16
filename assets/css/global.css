@@ -207,7 +207,7 @@ picture:after {
   border: rgba(255, 255, 255, 0.389) 1px solid;
 }
 .mountain {
-  filter: blur(1px);
+  filter: blur(0px);
   position: absolute;
 }
 /* navbar */
