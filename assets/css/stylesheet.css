@@ -156,6 +156,7 @@
 
 .title {
   display: block;
+  margin-bottom: 10px;
 }
 
 .persona {
@@ -179,7 +180,7 @@
 /* accordion */
 
 #bootstrap-overrides .accordion-item {
-  background-color: var(--light);
+  background-color: gainsboro;
 }
 #bootstrap-overrides .accordion-header {
   background-color: var(--light);

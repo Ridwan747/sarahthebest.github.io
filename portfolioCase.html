@@ -22,47 +22,47 @@
 <body class="darkBg" id="bootstrap-overrides">
 
   <button id="topBtn" class="position-fixed end-0 bottom-0" onclick="goToTop()">
-    <img class="w-50 ms-3 upArrow" src="assets/img/upArrow.webp" alt="">
-</button>
+    <img class="w-50 ms-3 upArrow" src="assets/img/upArrow.webp" alt="Top button.">
+  </button>
 
-<nav class="navbar customBorder border-top-0 border-start-0 border-end-0 navbar-expand-lg sticky-top">
-  <div class="container-lg text-center">
-    <a class="navbar-brand ms-0 ps-0" href="index.html"><img class="logo" src="assets/img/logo.webp"></a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"> </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-lg-0">
-        <li class="nav-item">
-          <a class="link" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="link" href="https://github.com/sarahthebest" target="_blank" tabindex="-1">Github</a>
-        </li>
-        <li class="nav-item">
-          <a class="link" href="https://www.linkedin.com/in/sarah-emmoth-696131206/" target="_blank"
-            tabindex="-1">Linkedin</a>
-        </li>
-        <!-- dark mode button -->
-        <div class="toggle ms-4 my-auto">
-          <input type="checkbox" class="checkbox" id="checkbox" />
-          <label for="checkbox" class="checkbox-label rounded-pill d-flex position-relative">
-            <div class="position-absolute" id="half-circle">
-            </div>
-            <span class="ball"></span>
-          </label>
-        </div>
-      </ul>
+  <nav class="navbar customBorder border-top-0 border-start-0 border-end-0 navbar-expand-lg sticky-top">
+    <div class="container-lg text-center">
+      <a class="navbar-brand ms-0 ps-0" href="index.html"><img class="logo" src="assets/img/logo.webp"></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-lg-0">
+          <li class="nav-item">
+            <a class="link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="link" href="https://github.com/sarahthebest" target="_blank" tabindex="-1">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="link" href="https://www.linkedin.com/in/sarah-emmoth-696131206/" target="_blank"
+              tabindex="-1">Linkedin</a>
+          </li>
+          <!-- dark mode button -->
+          <div class="toggle ms-4 my-auto">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label rounded-pill d-flex position-relative">
+              <div class="position-absolute" id="half-circle">
+              </div>
+              <span class="ball"></span>
+            </label>
+          </div>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <div class="m-0 p-0 position-fixed overflow-hidden" id="headerBG">
+    <div class="circle2 position-absolute linear start-0 top-0"></div>
+    <div class="circle3 position-absolute end-0 top-0 linear"></div>
   </div>
-</nav>
-  
-    <div class="m-0 p-0 position-fixed overflow-hidden" id="headerBG">
-      <div class="circle2 position-absolute linear start-0 top-0"></div>
-      <div class="circle3 position-absolute end-0 top-0 linear"></div>
-    </div>
 
   <main>
     <div class="grid-container g-0 container-lg mx-auto border-top-0 rounded-bottom customBG customBorder">
@@ -78,16 +78,19 @@
       </div>
       <div id="grid-item2" class="col-11 mt-4 mb-0 customBorder mx-auto">
         <div style="padding: 3%;">
-        <h2>Background</h2>
-        <p>
-          Autumn 2023 i enrolled in a new two-year frontend program and in preperation for my
-          internship period in fall 2024 i wanted to revamp my old portfolio.</p>
-        <h2>Mission</h2>
-        <p>Redesign my portfolio to reflect my personal style and use new stuff.
-        </p>
-        <p>#note! <br>
-          This isn't a formal case study. Think of it more as a personal blog post. No exhaustive research, just a
-          passionate endeavor to create a online space to showcase myself and my progress. </p>
+          <h2>Background</h2>
+          <p>
+            Autumn 2023 i enrolled in a new two-year frontend program and in preperation for my
+            internship period in fall 2024 i wanted to revamp my old portfolio. What better way to demonstrate my skills
+            than by taking
+            on the challenge of building something meaningful myself?</p>
+          <h2>Mission</h2>
+          <p>Redesign my portfolio to reflect my personal style and use new stuff.
+          </p>
+          <p> <span class="spanBorder rounded-pill">#note! </span><br>
+            This isn't a formal case study. Think of it more as a personal blog post. No exhaustive research, just a
+            passionate endeavor to create a online space to showcase myself and my progress. Welcome to my digital
+            playground! </p>
         </div>
       </div>
 
@@ -100,16 +103,19 @@
             <p>
               I built my previous portfolio during a two-and-a-half year UX program with vanilla html/css
               and while functional it wasn't very dynamic or interesting. Now equipped with much more frontend skills
-               I wanted to give my portfolio a big refurbishing.
+              I wanted to give my portfolio a big refurbishing.
             </p>
           </div>
           <div class="row1">
             <div class="imgContainer" style="height: 400px;overflow-y:scroll;">
-            <img class="rounded img-fluid" src="assets/img/portfolio.webp" alt="Picture of my old portfolio website."/>
-          </div>
-          <p>Flashback to my old portfolio.</p>
-            <p>It was time to bid farewell to the old and usher in the new. Aligning my digital presence with my personal style
-              and <span class="cursive">essence.</span> Certain elements like color and bold typography stayed but i wanted to add more
+              <img class="rounded img-fluid" src="assets/img/portfolio.webp"
+                alt="Picture of my old portfolio website." />
+            </div>
+            <p>Flashback to my old portfolio.</p>
+            <p>It was time to bid farewell to the old and usher in the new. Aligning my digital presence with my
+              personal style
+              and <span class="cursive">essence.</span> Certain elements like color and bold typography stayed but i
+              wanted to add more
               dynamic content and subtle animations.
             </p>
           </div>
@@ -120,44 +126,54 @@
         <div class="phase3 customBorder">
           <div class="title">
             <h2><span style="font-weight: 800">Phase 2</span> - Taking action!</h2>
-            <p class="mb-5">
+            <p>
               I decided to embrace Bootstrap for my
               portfolio redesign. It seemed like the perfect toolkit to enhance responsiveness which was a issue in my
-              previous portfolio. Bootstrap's utility classes and components made it easier for me to
-              maintain order in my HTML and CSS files.</p>
-              <div>
-              <img src="./assets/img/icons/bs.webp" style="width: 10%;"  alt="">
-              <div class="d-flex justify-content-center">
-                <pre class="window customBorder rounded p-2">
-                  <code style="color: var(--orange);">
+              previous portfolio. Bootstrap's utility classes and components made it easy for me to
+              style my html document and minimize the amount of code needed in my CSS files.</p>
+          </div>
+          <div>
+            <div class="d-flex justify-content-center">
+              <pre class="window customBorder rounded p-2">
+                <code style="color: var(--orange);">
 &lt;section class="container-lg mx-auto p-0"&gt;<br>&lt;div class="Infobox col-12 m-0 text-center w-100"&gt; &lt;/div&gt;<br>&lt;/section&gt;</code>
-                </pre>
-              </div>
+              </pre>
             </div>
           </div>
+          <p>tepping outside the realm of frameworks, I dived into the exciting world of design possibilities.
+            I wanted to strike a balance between keeping some stuff from my old portfolio, like the bright color schemes
+            and bold fonts and tossing in new elements, like dynamic content and subtle animations.<br class="mb-1">
+            The goal was simple: make my online space not just a reflection of my frontend skills but a place that grabs
+            visitors, pulls them in, and gives them a cool interactive experience. <br class="mb-1">
+            To get into the creative space, I checked out a bunch of online portfolios, soaking in ideas for layouts,
+            interactive features, and the overall vibe.
+          </p>
         </div>
       </div>
       <div id="grid-item6" class="col-11 mx-auto">
         <div class="phase2 customBorder" style="padding-bottom: 0;">
           <div class="title">
-            <h2><span style="font-weight: 800">Phase 3</span> - Facing the behemoth...</h2>
+            <h2><span style="font-weight: 800">Phase 3</span> - Foray into the tech jungle</h2>
             <p class="mb-4">
-              
+
             </p>
           </div>
           <div class="row">
             <p>
               Since enrolling in my program i had gotten a much firmer grasp of html, css, javascript and Bootstrap
-              so i sought to utilize these when redesigning my portfolio. I also considered what kind of layout
-              I wanted to do and looked at tons of portfolios online for inspiration. I decided to stick to my old
-              layout
+              so i sought to utilize these when redesigning my portfolio.
             </p>
-
-          </div>
-          <div class="row align-items-center mt-4">
-            <h3>ChatGPT - My...saviour?</h3>
-            <p>Throgh this journey i often sought the guidance of chatGPT to help me thorugh the various obstacles and hurdles i faced in my path.</p>
-            <img src="assets/img/gpt.webp" style="max-width: 550px;min-width: 370px;" alt="">
+            <div>
+              <p>Technologies used:</p>
+              <ul>
+                <li>VScode for code editor.</li>
+                <li>Bootstrap framework.</li>
+                <li>Github for version management and pages hosting.</li>
+                <li>Figma and Adobe Illustrator for creating graphic assets.</li>
+              </ul>
+              <p>With this toolset i was able to deliver a visually dynamic website that properly showcased who I am.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -165,82 +181,105 @@
         <div class="phase2 customBorder">
           <div class="title">
             <h2><span style="font-weight: 800">Phase 4</span> - Setbacks, lots of them.</h2>
-            <p class="mb-5">
+            <p>
               Directory of issues and problems!
             </p>
-            <div class="accordion accordion-flush rounded">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Using github!
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">I decided to use GitHub to host and manage my portfolio. I had very little
-                    experience with GitHub prior to enrolling
-                    in my program but i caught on fairly quick. I also discovered GitHub Pages and decided to host my
-                    portfolio there. It was a wise decision economically but it also made sense
-                    <br>
+          </div>
+          <div class="accordion accordion-flush rounded">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Using github!
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">I decided to use GitHub to host and manage my portfolio. I had very little
+                  experience with GitHub prior to enrolling
+                  in my program but i caught on fairly quick. I also discovered GitHub Pages and decided to host my
+                  portfolio there.
+                  <br>
 
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Using Bootstrap!
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    I made the excecutive decision to use Bootstrap 5 for this project. It made the issue of
-                      responsiveness much easier to solve and made my CSS file a lot prettier. 
-                      <br class="mb-2">
-                      Bootstrap came with its own issues though that i wasn't entirely equipped to solve on my own which
-                      made me rely on google and chat-gpt a lot.
-                      One issue was the Bootstrap default styles. Eg. wanting to override a bs default background-color was a
-                      bit tricky for me
-                      but i solved it by adding a id tag to body so it made my selectors more specific.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Website performance
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Later in developement i decided to analyse how my website perfomred in terms of
-                    speed, accessibility and best practices using PageSpeed. I discovered that the header image i used was 
-                    VERY slow to load in fact none of my images were optimized or responsive and THAT was a problem.
-                  </div>
                 </div>
               </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Using Bootstrap!
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  I made the excecutive decision to use Bootstrap 5 for this project. It made the issue of
+                  responsiveness much easier to tackle and lessened the amount of CSS lines needed to execute my
+                  <span class="cursive">vision</span>.
+                  <br class="mb-2">
+                  Bootstrap came with its own issues though that i wasn't entirely equipped to solve on my own which
+                  made me rely on google and chat-gpt a lot.
+                  One issue was the Bootstrap default styles. Eg. wanting to override a bs default background-color was
+                  a
+                  bit tricky for me
+                  but i solved it by adding a id tag to body so it made my selectors more specific.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Website performance
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Later in developement i decided to analyse how my website performed in terms
+                  of
+                  speed, accessibility and best practices using PageSpeed. I discovered that the header image i used was
+                  VERY slow to load in fact none of my images were optimized or responsive and THAT was a problem. <br>
+                  I decided to
+                  convert all of my images into next-gen format webp,I reviewed all the recommendations from PageSpeed
+                  and made the necessary adjustments accordingly.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center mt-4">
+            <h3>ChatGPT - My...saviour?</h3>
+            <p>Despite these challenges, each setback taught me something new and further propelled my skills.
+              ChatGPT was a big help thorughout the entire process. ChatGPT served as a techincal mentor when i was
+              unsure of how
+              to solve a problem eg. how to implement responsivess in my website it offered sound advice that made the
+              task
+              less daunting.</p>
+            <img src="assets/img/gpt.webp" style="max-width: 550px;min-width: 370px;" alt="">
           </div>
         </div>
       </div>
       <div id="grid-item8" class="mb-5 col-11 mx-auto">
-          <div class="phase2 customBorder">
-            <div class="title">
-              <h2><span style="font-weight: 800">Completion</span>- the END!</h2>
-              <p class="mb-5">
-                Could it be?...
+        <div class="phase2 customBorder">
+          <div class="title">
+            <h2><span style="font-weight: 800">Completion</span>- the END!</h2>
+            <p>
+              The end of a journey...
+            </p>
+            <div class="row">
+              <p>Enrolling in the frontend program in the autumn of 2023 marked the beginning of this dev journey. The
+                mission was simple: redesign my portfolio
+                to not just showcase technical skills but to be a reflection of my growth and evolving style. What's
+                next? to delve deeper into web-developement
+                and learn more!<br>
+              </p>
               <p>
-                Since enrolling in my program i had gotten a much firmer grasp of html, css, javascript and Bootstrap
-                so i sought to utilize these when redesigning my portfolio. I also considered what kind of layout
-                I wanted to do and looked at tons of portfolios online for inspiration. I decided to stick to my old
-                layout
+                Moving forward this portfolio will be maintained and updated for the foreseeable future so stay tuned
+                for more projects &#128521; .
               </p>
             </div>
           </div>
+        </div>
         </p>
       </div>
     </div>
@@ -268,8 +307,8 @@
     AOS.init();
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"
+    defer></script>
   <script src="scripts.js"></script>
 </body>
 

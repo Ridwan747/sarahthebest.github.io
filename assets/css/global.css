@@ -1,9 +1,6 @@
 /*  beeg screen */
 
 @media screen and (max-width: 2000px) {
-  #topBtn {
-    display: block;
-  }
   *:hover {
     pointer-events: all;
   }
@@ -47,9 +44,6 @@
 @media screen and (max-width: 1000px) {
   .content-to-hide {
     display: none;
-  }
-  #topBtn {
-    display: block;
   }
   #bg {
     height: 100%;
@@ -144,7 +138,7 @@
 /* my colors */
 :root {
   --dark: #101010;
-  --light: #eae4ed;
+  --light: #f2f0f3;
   --orange: #ff6040;
   --bg: #1e1222;
 }
@@ -424,6 +418,7 @@ p {
 }
 .spanBorder {
   border: 1px solid var(--light);
+  padding: 5px;
 }
 h1 {
   font-size: 3rem;
