@@ -184,7 +184,6 @@
 /* sets transition for all  */
 * {
   transition: all 0.3s linear !important;
-  cursor: default;
 }
 /* top button */
 #topBtn {
