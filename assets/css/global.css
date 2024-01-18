@@ -191,9 +191,10 @@
   display: none;
   background-color: var(--light);
   border: 0px;
-  z-index: 2;
+  z-index: 10;
   height: 50px;
   border-radius: 50px 0px 0px 0px;
+  transition: all 0.1s ease-in-out !important;
 }
 #bootstrap-overrides .body {
   margin: 0;
