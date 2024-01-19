@@ -76,6 +76,10 @@
     height: 400px;
     margin-left: 15vw;
   }
+  #bootstrap-overrides .rounded,
+  #bootstrap-overrides .rounded-bottom {
+    border-radius: 0;
+  }
 }
 #headerBG {
   width: 100%;
