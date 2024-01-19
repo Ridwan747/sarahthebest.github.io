@@ -221,6 +221,7 @@ li {
   height: fit-content;
   overflow: hidden;
   display: grid;
+  grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
 }
