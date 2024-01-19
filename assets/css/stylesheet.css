@@ -127,13 +127,6 @@
   top: 0;
   width: 25%;
 }
-.purpleCircle{
-  width:150px;height:150px;
-  top: 500px;
-  z-index: -1;
-  background: rgb(255,96,64);
-background: radial-gradient(circle, rgba(255,96,64,1) 0%, rgba(255,255,255,0) 64%);   
-}
 #grid-item3 {
   grid-area: projectB;
   height: fit-content;
