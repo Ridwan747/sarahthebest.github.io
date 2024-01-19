@@ -6,8 +6,10 @@
   }
   .grid-container {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-areas: " header" "projectB" "phase1" "phase2" "phase3" "phase4" "phase5" "results";
+    grid-template-columns: auto-fit(80% 20%);
+    grid-template-areas:"projectB sidebar"
+     "phase1 sidebar" "phase2 sidebar" "phase3 sidebar"
+      "phase4 sidebar" "phase5 sidebar" "results sidebar";
   }
   .proto {
     display: grid;
@@ -18,9 +20,18 @@
     grid-template-areas: "image arrow image2";
     height: fit-content;
   }
+  .phase1,
+.phase2,
+.phase3,
+.phase4 {
+  padding: 3%;
+  margin-bottom: 5%;
+  backdrop-filter: blur(15px);
+  width: 90%;
+}
 }
 /*  small screen */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #bootstrap-overrides .container {
     width: 100%;
   }
@@ -28,7 +39,7 @@
     margin-top: 0px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-areas: " header" " projectB" " phase1" " phase2" " phase3" " phase4" " phase5" " results" "sidebar";
+    grid-template-areas: "projectB" " phase1" " phase2" " phase3" " phase4" " phase5" " results" "sidebar";
   }
 
   .proto {
@@ -41,11 +52,22 @@
   #imageCarousel{
     pointer-events: all !important;
   }
+  article{
+    display: none;
+    overflow: hidden;
+  }
+  .phase1,
+.phase2,
+.phase3,
+.phase4 {
+  width: 100%;
+}
 }
 .header {
   border: none;
-  height: 700px;
+  height: 400px;
   position: relative;
+  backdrop-filter: blur(5px);
 }
 
 .grid-container {
@@ -93,10 +115,28 @@
   color: var(--orange);
   box-shadow: rgba(0, 0, 0, 0.391) 0px 4px 12px;
 }
-
+#grid-item2 {
+  position: sticky;
+  height: 100%;
+  grid-area: sidebar;
+  right: 0;
+  margin-top: 50px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 25%;
+}
+.purpleCircle{
+  width:150px;height:150px;
+  top: 500px;
+  z-index: -1;
+  background: rgb(255,96,64);
+background: radial-gradient(circle, rgba(255,96,64,1) 0%, rgba(255,255,255,0) 64%);   
+}
 #grid-item3 {
   grid-area: projectB;
-  height: 100%;
+  height: fit-content;
   left: 0;
   margin-top: 50px;
 }
@@ -108,15 +148,6 @@
   width: 100%;
 }
 
-.phase1,
-.phase2,
-.phase3,
-.phase4,
-#grid-item2 {
-  padding: 3%;
-  margin-bottom: 5%;
-  backdrop-filter: blur(15px);
-}
 #grid-item4 {
   grid-area: phase1;
   margin-top: 20px;
@@ -168,7 +199,6 @@
 }
 
 .window{
-  width: fit-content;
   overflow-x: auto;
   margin-left: 0; /* Reset margin */
   margin-right: 0; /* Reset margin */

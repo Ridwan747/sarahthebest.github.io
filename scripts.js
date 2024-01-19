@@ -46,7 +46,6 @@ function goToTop() {
   }
 }
 
-
 window.addEventListener('load', function () {
   AOS.init();
 });

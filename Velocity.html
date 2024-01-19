@@ -23,62 +23,61 @@
 
   <button id="topBtn" class="position-fixed end-0 bottom-0" onclick="goToTop()">
     <img class="w-50 ms-3 upArrow" src="assets/img/upArrow.webp" alt="Up button.">
-</button>
+  </button>
 
 
-<nav class="navbar customBorder border-top-0 border-start-0 border-end-0 navbar-expand-lg sticky-top">
-  <div class="container-lg text-center">
-    <a class="navbar-brand ms-0 ps-0" href="index.html"><img class="logo" src="assets/img/logo.webp"></a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"> </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-lg-0">
-        <li class="nav-item">
-          <a class="link" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="link" href="https://github.com/sarahthebest" target="_blank" tabindex="-1">Github</a>
-        </li>
-        <li class="nav-item">
-          <a class="link" href="https://www.linkedin.com/in/sarah-emmoth-696131206/" target="_blank"
-            tabindex="-1">Linkedin</a>
-        </li>
-        <!-- dark mode button -->
-        <div class="toggle ms-4 my-auto">
-          <input type="checkbox" class="checkbox" id="checkbox" />
-          <label for="checkbox" class="checkbox-label rounded-pill d-flex position-relative">
-            <div class="position-absolute" id="half-circle">
-            </div>
-            <span class="ball"></span>
-          </label>
-        </div>
-      </ul>
+  <nav class="navbar customBorder border-top-0 border-start-0 border-end-0 navbar-expand-lg sticky-top">
+    <div class="container-lg text-center">
+      <a class="navbar-brand ms-0 ps-0" href="index.html"><img class="logo" src="assets/img/logo.webp"></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-lg-0">
+          <li class="nav-item">
+            <a class="link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="link" href="https://github.com/sarahthebest" target="_blank" tabindex="-1">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="link" href="https://www.linkedin.com/in/sarah-emmoth-696131206/" target="_blank"
+              tabindex="-1">Linkedin</a>
+          </li>
+          <!-- dark mode button -->
+          <div class="toggle ms-4 my-auto">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label rounded-pill d-flex position-relative">
+              <div class="position-absolute" id="half-circle">
+              </div>
+              <span class="ball"></span>
+            </label>
+          </div>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <div class="m-0 p-0 position-fixed overflow-hidden" id="headerBG">
+    <div class="circle2 position-absolute linear start-0 top-0"></div>
+    <div class="circle3 position-absolute end-0 top-0 linear"></div>
   </div>
-</nav>
-<div class="m-0 p-0 position-fixed overflow-hidden" id="headerBG">
-  <div class="circle2 position-absolute linear start-0 top-0"></div>
-  <div class="circle3 position-absolute end-0 top-0 linear"></div>
-</div>
 
   <main>
-    <div class="grid-container g-0 container-lg mx-auto border-top-0 rounded-bottom customBG customBorder">
-      <div class="grid-item1 col-12 customBorder p-0 m-0">
-        <div class="projectTitle align-items-center col-8">
-          <h1 class="my-3 cursive">Velocity - Mobile trading application</h1>
-          <ol class="projectTags">
-            <li class="tag p-2 rounded customBorder me-3">#Userresearch</li>
-            <li class="tag p-2 rounded customBorder me-3">#UXdesign</li>
-            <li class="tag p-2 rounded customBorder me-3">#UIdesign</li>
-          </ol>
-        </div>
+    <div class="container-lg mx-auto customBorder p-0 m-0 header">
+      <div class="projectTitle align-items-center col-8">
+        <h1 class="my-3 cursive">Velocity - Mobile trading application</h1>
+        <ol class="projectTags">
+          <li class="tag p-2 rounded customBorder me-3">#Userresearch</li>
+          <li class="tag p-2 rounded customBorder me-3">#UXdesign</li>
+          <li class="tag p-2 rounded customBorder me-3">#UIdesign</li>
+        </ol>
       </div>
-
+    </div>
+    <div class="grid-container g-0 container-lg mx-auto border-top-0 rounded-bottom customBG customBorder">
       <div id="grid-item3" class="col-11 p-0 mx-auto">
-        <div style="width: 80%; padding: 3%;">
+        <div style="width: 80%;padding: 3%;">
           <h2>Background</h2>
           <p>
             Velocity is a project I worked on during my internship at a design
@@ -94,7 +93,7 @@
         </div>
       </div>
       <div id="grid-item4" class="col-11 mx-auto">
-        <div class="phase1 customBorder">
+        <div class="phase1">
           <div class="title">
             <h2>
               <span style="font-weight: 800">Phase 1</span> - define &
@@ -133,7 +132,7 @@
         </div>
       </div>
       <div id="grid-item5" class="col-11 mx-auto">
-        <div class="phase2 customBorder">
+        <div class="phase2">
           <div class="title">
             <h2><span style="font-weight: 800">Phase 2</span> - research</h2>
             <p class="mb-5">
@@ -197,7 +196,7 @@
         </div>
       </div>
       <div id="grid-item6" class="col-11 mx-auto">
-        <div class="phase3 customBorder">
+        <div class="phase3">
           <div class="title">
             <h2><span style="font-weight: 800">Phase 3</span> - ideation</h2>
             <p class="mb-5">
@@ -270,7 +269,7 @@
         </div>
       </div>
       <div id="grid-item7" class="col-11 mx-auto">
-        <div class="phase4 customBorder">
+        <div class="phase4">
           <div class="title">
             <h2><span style="font-weight: 800">Phase 4</span> - prototyping</h2>
             <p class="mb-5">
@@ -292,7 +291,7 @@
           <div class="mb-5 proto">
             <img style="
                   grid-area: image
-                "class="rounded customBorder img mx-auto" src="assets/img/Lofi-home-1.webp" />
+                " class="rounded customBorder img mx-auto" src="assets/img/Lofi-home-1.webp" />
             <img src="assets/img/arrowLofi.webp" class="mx-auto my-auto arro" style="width: 20%;" alt="">
             <img style="
                   grid-area: image2;
@@ -313,15 +312,17 @@
             <img src="assets/img/Lofi-stock.webp" style="
                   grid-area: image;
                 " class="rounded customBorder img mx-auto" />
-            <img src="assets/img/arrowLofi.webp" class="mx-auto my-auto arro" style="width: 20%;grid-area: arrow;" alt="">
-            <img style="grid-area: image2;" class="rounded customBorder img mx-auto" src="assets/img/Stockscreen - Chart.webp" />
+            <img src="assets/img/arrowLofi.webp" class="mx-auto my-auto arro" style="width: 20%;grid-area: arrow;"
+              alt="">
+            <img style="grid-area: image2;" class="rounded customBorder img mx-auto"
+              src="assets/img/Stockscreen - Chart.webp" />
           </div>
         </div>
       </div>
       <div id="grid-item8" class="mb-5 col-11 mx-auto">
         <h2><span style="font-weight: 800">Results</span></h2>
 
-        <div class="title result w-100 customBorder">
+        <div class="title result w-100">
           <ol class="list-unstyled p-2">
             <li class="mt-3">
               &#128640; By the end of my internship, all of the work and resources were
