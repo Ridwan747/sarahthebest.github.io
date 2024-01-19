@@ -154,9 +154,6 @@
   .textDecoLeft {
     margin-top: 50px;
   }
-  #bootstrap-overrides .rounded {
-    border-radius: 0%;
-  }
 }
 
 .container-lg {
