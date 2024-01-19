@@ -210,6 +210,7 @@
 .mountain {
   filter: blur(0px);
   position: absolute;
+  image-rendering: optimizeSpeed;
 }
 /* navbar */
 .navbar-nav {
