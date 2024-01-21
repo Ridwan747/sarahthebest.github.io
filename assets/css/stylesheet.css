@@ -43,9 +43,12 @@
     margin-top: 50px;
     width: 50vw;
   }
+  .date{
+    margin-top: 16px;
+  }
 }
-/*  small screen */
-@media screen and (max-width: 900px) {
+/*  medium screen */
+@media screen and (max-width: 1000px) {
   #bootstrap-overrides .container {
     width: 100%;
   }
@@ -84,6 +87,12 @@
   .phase4 {
     width: 100%;
   }
+  /*  small screen */
+@media screen and (max-width: 600px) {
+  .date{
+    margin-top: 0px;
+  }
+}
 }
 .header {
   border: none;
@@ -296,10 +305,6 @@ li {
   grid-area: arrow;
 }
 
-.img {
-  height: 600px;
-  width: 300px;
-}
 
 /* font styles */
 blockquote {
