@@ -134,6 +134,7 @@
   --light: #f2f0f3;
   --orange: #ff6040;
   --bg: #1e1222;
+  --purple: #942bd6;
 }
 .darkBg {
   background-color: var(--bg);
