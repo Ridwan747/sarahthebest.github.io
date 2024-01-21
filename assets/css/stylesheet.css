@@ -4,11 +4,18 @@
     height: 600px;
     position: relative;
   }
+  .circle2{
+    margin-left: -650px;
+  }
+  .circle3{
+    margin-right: -650px;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: auto-fit(80% 20%);
-    grid-template-areas:"projectB sidebar"
-     "phase1 sidebar" "phase2 sidebar" "phase3 sidebar"
+    grid-template-areas:
+      "projectB sidebar"
+      "phase1 sidebar" "phase2 sidebar" "phase3 sidebar"
       "phase4 sidebar" "phase5 sidebar" "results sidebar";
   }
   .proto {
@@ -21,19 +28,32 @@
     height: fit-content;
   }
   .phase1,
-.phase2,
-.phase3,
-.phase4 {
-  padding: 3%;
-  margin-bottom: 5%;
-  backdrop-filter: blur(15px);
-  width: 90%;
-}
+  .phase2,
+  .phase3,
+  .phase4 {
+    padding: 3%;
+    margin-bottom: 5%;
+    backdrop-filter: blur(15px);
+    width: 90%;
+  }
+  #grid-item3 {
+    grid-area: projectB;
+    height: fit-content;
+    left: 0;
+    margin-top: 50px;
+    width: 50vw;
+  }
 }
 /*  small screen */
 @media screen and (max-width: 900px) {
   #bootstrap-overrides .container {
     width: 100%;
+  }
+  .circle2{
+    margin-left: -250px;
+  }
+  .circle3{
+    margin-right: -250px;
   }
   .grid-container {
     margin-top: 0px;
@@ -41,7 +61,9 @@
     grid-template-columns: 100%;
     grid-template-areas: "projectB" " phase1" " phase2" " phase3" " phase4" " phase5" " results" "sidebar";
   }
-
+  #grid-item3 {
+    width: 80vw;
+  }
   .proto {
     grid-template-columns: 100%;
     row-gap: 20px;
@@ -49,19 +71,19 @@
     grid-template-areas: "image" "image2";
     height: fit-content;
   }
-  #imageCarousel{
+  #imageCarousel {
     pointer-events: all !important;
   }
-  article{
+  article {
     display: none;
     overflow: hidden;
   }
   .phase1,
-.phase2,
-.phase3,
-.phase4 {
-  width: 100%;
-}
+  .phase2,
+  .phase3,
+  .phase4 {
+    width: 100%;
+  }
 }
 .header {
   border: none;
@@ -127,12 +149,6 @@
   top: 0;
   width: 25%;
 }
-#grid-item3 {
-  grid-area: projectB;
-  height: fit-content;
-  left: 0;
-  margin-top: 50px;
-}
 
 .info {
   color: var(--dark);
@@ -190,7 +206,7 @@
   flex-direction: row;
 }
 
-.window{
+.window {
   overflow-x: auto;
   margin-left: 0; /* Reset margin */
   margin-right: 0; /* Reset margin */
@@ -203,7 +219,8 @@
 }
 #bootstrap-overrides .accordion-header {
   background-color: var(--light);
-}#bootstrap-overrides .accordion-button:not(.collapsed) {
+}
+#bootstrap-overrides .accordion-button:not(.collapsed) {
   color: var(--dark);
   background-color: var(--light);
   border: 0;
@@ -214,7 +231,7 @@
   outline: 0;
   box-shadow: none;
 }
-#bootstrap-overrides .accordion{
+#bootstrap-overrides .accordion {
   --bs-accordion-bg: var(--light);
 }
 #bootstrap-overrides .accordion-body {
@@ -335,7 +352,7 @@ body.DarkToLight .frame {
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.636);
 }
 body.DarkToLight .arro {
-filter: invert(0);
+  filter: invert(0);
 }
 body.DarkToLight #bootstrap-overrides .accordion-item {
   color: var(--dark);

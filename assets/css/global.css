@@ -32,12 +32,6 @@
   .circle {
     margin-left: 25vw;
   }
-  .circle2{
-    margin-left: -650px;
-  }
-  .circle3{
-    margin-right: -650px;
-  }
 }
 /* medium */
 @media screen and (max-width: 1000px) {
