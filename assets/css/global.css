@@ -314,7 +314,7 @@ body.DarkToLight .circle3 {
   background: radial-gradient(
     circle,
     rgba(242, 255, 186, 0.538) 50%,
-    rgba(255, 55, 0, 0.429) 70%,
+    rgba(255, 55, 0, 0.614) 70%,
     rgba(255, 0, 0, 0.647) 61%
   );
 }
