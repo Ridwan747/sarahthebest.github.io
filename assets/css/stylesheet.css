@@ -14,17 +14,17 @@
     display: grid;
     grid-template-columns: auto-fit(80% 20%);
     grid-template-areas:
-      "projectB sidebar"
-      "phase1 sidebar" "phase2 sidebar" "phase3 sidebar"
-      "phase4 sidebar" "phase5 sidebar" "results sidebar";
+      "projectB"
+      "phase1" "phase2" "phase3"
+      "phase4" "phase5" "results";
   }
   .proto {
     display: grid;
     width: fit-content;
-    grid-template-columns: auto-fit(40% 20% 40%);
-    column-gap: 0;
+    grid-template-columns:  40% 40%;
+    column-gap: 20px;
     grid-template-rows: auto-fit;
-    grid-template-areas: "image arrow image2";
+    grid-template-areas: "image image2";
     height: fit-content;
   }
   .phase1,
@@ -33,7 +33,6 @@
   .phase4 {
     padding: 3%;
     margin-bottom: 5%;
-    backdrop-filter: blur(15px);
     width: 90%;
   }
   #grid-item3 {
@@ -68,11 +67,11 @@
     width: 80vw;
   }
   .proto {
-    grid-template-columns: 100%;
+    grid-template-columns: 80%;
     row-gap: 20px;
-    grid-template-rows: repeat(2, 600px);
+    grid-template-rows: auto-fit(2, 500px);
     grid-template-areas: "image" "image2";
-    height: fit-content;
+    height: 1250px;
   }
   #imageCarousel {
     pointer-events: all !important;
@@ -301,10 +300,6 @@ li {
   font-size: 1.2rem;
 }
 
-.arro {
-  grid-area: arrow;
-}
-
 
 /* font styles */
 blockquote {
@@ -355,9 +350,6 @@ body.DarkToLight .contents li {
 }
 body.DarkToLight .frame {
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.636);
-}
-body.DarkToLight .arro {
-  filter: invert(0);
 }
 body.DarkToLight #bootstrap-overrides .accordion-item {
   color: var(--dark);
