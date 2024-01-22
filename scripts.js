@@ -20,8 +20,6 @@ function checkDarkModePreference() {
     document.body.classList.remove("DarkToLight");
   }
 }
-
-// Call the function to check and apply the dark mode preference when the page loads
 window.addEventListener("load", checkDarkModePreference);
 
 
