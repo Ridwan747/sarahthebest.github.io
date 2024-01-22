@@ -1,9 +1,29 @@
 // Darkmode toggle btn
 const checkbox = document.getElementById("checkbox");
 
-checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("DarkToLight");
-});
+// Function to toggle dark mode and save preference to localStorage
+function toggleDarkMode() {
+  const isDarkMode = document.body.classList.toggle("DarkToLight");
+  // Save the user's preference to localStorage
+  localStorage.setItem("darkMode", isDarkMode ? "enabled" : "disabled");
+}
+
+// Event listener for the checkbox change
+checkbox.addEventListener("change", toggleDarkMode);
+
+// Function to check if dark mode preference is saved in localStorage and apply it
+function checkDarkModePreference() {
+  const storedDarkMode = localStorage.getItem("darkMode");
+  if (storedDarkMode === "enabled") {
+    document.body.classList.add("DarkToLight");
+  } else {
+    document.body.classList.remove("DarkToLight");
+  }
+}
+
+// Call the function to check and apply the dark mode preference when the page loads
+window.addEventListener("load", checkDarkModePreference);
+
 
 // Function to update the date and time
 function updateDateTime() {

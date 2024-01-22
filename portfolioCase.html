@@ -47,12 +47,12 @@
           </li>
           <!-- dark mode button -->
           <div class="toggle ms-4 my-auto">
-            <input type="checkbox" class="checkbox" id="checkbox" />
+            <input type="checkbox" class="checkbox" id="checkbox" onclick="toggleDarkMode()" />
             <label for="checkbox" class="checkbox-label rounded-pill d-flex position-relative">
-              <div class="position-absolute" id="half-circle">
-              </div>
+              <div class="position-absolute" id="half-circle"></div>
               <span class="ball"></span>
             </label>
+            <label for="checkbox" class="toggle-label visually-hidden">Toggle Dark Mode</label>
           </div>
         </ul>
       </div>
@@ -90,7 +90,7 @@
           <p class="px-3">Redesign my portfolio to reflect my personal style and use new stuff.
           </p>
           <div class="rounded p-3 customBorder border-end-0 border-start-0 border-bottom-0"
-           style="background-color:rgb(220, 220, 220)">
+            style="background-color:rgb(220, 220, 220)">
             <p style="color: var(--dark);">
               <span class="rounded-pill p-1" style="border: 1px solid var(--dark);">#note!</span>
               <br class="mb-2">
