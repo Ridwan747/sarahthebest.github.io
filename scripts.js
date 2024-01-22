@@ -11,7 +11,6 @@ function toggleDarkMode() {
 // Event listener for the checkbox change
 checkbox.addEventListener("change", toggleDarkMode);
 
-// Function to check if dark mode preference is saved in localStorage and apply it
 function checkDarkModePreference() {
   const storedDarkMode = localStorage.getItem("darkMode");
   if (storedDarkMode === "enabled") {
