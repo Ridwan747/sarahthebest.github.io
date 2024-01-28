@@ -177,7 +177,7 @@
 }
 /* sets transition for all  */
 * {
-  transition: all 0.1s linear;
+  transition: all 0.3s linear;
 }
 /* top button */
 #topBtn {
@@ -188,12 +188,12 @@
   z-index: 10;
   height: 50px;
   border-radius: 50px 0px 0px 0px;
-  transition: all 0.1s ease-in-out !important;
 }
 #bootstrap-overrides .body {
   margin: 0;
   overflow-y: scroll;
   background-color: var(--bg) !important;
+  transition: all 0.1s linear !important;
 }
 .customBG {
   background-color: rgba(0, 0, 0, 0.786);
