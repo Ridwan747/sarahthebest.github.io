@@ -177,7 +177,7 @@
 }
 /* sets transition for all  */
 *:not(body) {
-  transition: all 0.09s linear;
+  transition: all 0.1s linear;
 }
 
 /* top button */
