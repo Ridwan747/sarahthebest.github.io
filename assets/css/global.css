@@ -176,9 +176,9 @@
   transform: translateX(12.5px) rotateY(180deg);
 }
 /* sets transition for all  */
-*:not(body) {
-  transition: all 0.3s linear !important;
-}
+/* *:not(body) {
+  transition: all 0s linear !important;
+} */
 
 /* top button */
 #topBtn {
