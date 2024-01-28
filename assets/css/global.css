@@ -177,7 +177,7 @@
 }
 /* sets transition for all  */
 * {
-  transition: all 0.3s linear !important;
+  transition: all 0.1s linear !important;
 }
 /* top button */
 #topBtn {
