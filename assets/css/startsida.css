@@ -37,10 +37,12 @@
   }
   .bento2 {
     max-height: 400px;
+    max-width: 400px;
   }
   .bento3{
     max-height: 300px;
     min-height: 240px;
+    max-width: 400px;
   }
   .bento4 {
     background-color: var(--bg);
