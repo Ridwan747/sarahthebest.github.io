@@ -397,6 +397,7 @@ p,
 a {
   color: var(--light);
   font-family: "Archivo";
+  cursor:default;
 }
 p {
   font-family: "Archivo", sans-serif;
