@@ -13,7 +13,6 @@
     margin-top: 3vh;
   }
   .bento1 {
-    max-height: 350px;
     padding: 20px;
     grid-column: span 2;
   }
@@ -53,17 +52,27 @@
   #bootstrap-overrides h2 {
     margin-top: none;
   }
-  .bento1 {
-    max-height: 400px;
-    padding: 20px;
+  .bento {
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+    padding-top: 20px;padding-bottom: 20px;
   }
   .bento2{
-    max-width: 300px;
+    grid-column: span 1;
+    max-height: 300px;
+  }
+  .bento1 {
+    grid-column: span 3;
+    padding: 20px;
+    height: 400px;
+  }
+  .bento3{
+    grid-column: span 2;
   }
   .bento4 {
-    grid-column: span 2;
+    grid-column: span 3;
     max-height: 300px;
-    width: 100%;
+    height: 250px;
     min-height: 200px;
   }
   .textDeco,
@@ -82,23 +91,7 @@
   #bootstrap-overrides .container {
     width: 100%;
   }
-  .bento {
-    grid-template-columns: auto;
-    grid-auto-flow: row;
-    padding-top: 20px;padding-bottom: 20px;
-  }
-  .bento2{
-    grid-column: span 2;
-    max-height: 300px;
-  }
-  .bento1 {
-    grid-column: span 3;
-    padding: 20px;
-    height: 400px;
-  }
-  .bento4 {
-    grid-column: span 3;
-  }
+
   .about-me {
     min-height: 400px;
     height: fit-content;
@@ -110,6 +103,15 @@
   }
   #bootstrap-overrides .headerBox {
     margin-left: 0 !important;
+  }
+  .bento1{
+    height: 400px;
+  }
+  .bento3{
+    grid-column: span 1;
+  }
+  .bento2{
+    grid-column: span 2;
   }
   .header {
     border: none;
