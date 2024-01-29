@@ -50,7 +50,7 @@
         radial-gradient(circle at 60% 60%, var(--purple) 10%, transparent 50%),
         radial-gradient(circle at 30% 70%, var(--purple) 10%, transparent 50%);
     grid-column: span 2;
-    max-height: 400px;
+    max-height: 300px;
     min-height: 200px;
   }
 
