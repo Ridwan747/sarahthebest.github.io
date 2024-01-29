@@ -19,23 +19,41 @@
     justify-content: center;
     height: 300px;
   }
-  .Infobox {
-    height: 400px;
-    grid-template-columns: auto-fit minmax(200px, 1fr);
-    grid-template-rows: repeat(auto-fit);
-    column-gap: 5vw;
-    grid-template-areas: "selfie text";
+  .bento {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-rows: auto-fit;
+    grid-template-columns: repeat(3, minmax(0, 2fr));
+    grid-auto-columns: 1fr;
+    display: grid;
+    position: relative;
+    padding: 20px;
   }
-  .info1 {
-    grid-area: selfie;
-    height: 100%;
-    width: 100%;
+
+  .bento1 {
+    max-height: 400px;
+    padding: 20px;
+    grid-column: span 2;
   }
-  .info2 {
-    grid-area: text;
-    height: 100%;
-    width: 100%;
+  .bento2 {
+    max-height: 400px;
   }
+  .bento3{
+    max-height: 300px;
+    min-height: 240px;
+  }
+  .bento4 {
+    background-color: var(--bg);
+    background-image:
+        radial-gradient(circle at 10% 20%, #1e1222 10%, transparent 50%),
+        radial-gradient(circle at 90% 90%, var(--light) 2%, transparent 50%),
+        radial-gradient(circle at 60% 60%, var(--orange) 30%, transparent 50%),
+        radial-gradient(circle at 30% 70%, var(--purple) 20%, transparent 50%);
+    grid-column: span 2;
+    max-height: 400px;
+    min-height: 240px;
+  }
+
   .container-lg {
     position: relative;
   }
@@ -51,24 +69,6 @@
   #bootstrap-overrides .headerBox {
     grid-template-areas: "scroll" "greeting";
     margin-left: 3vw !important;
-  }
-  .Infobox {
-    height: fit-content;
-    grid-template-columns: auto-fit, minmax(200px, 1fr);
-    grid-template-rows: repeat(auto-fit(fit-content));
-  }
-  .info1 {
-    grid-area: selfie;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .info2 {
-    grid-area: text;
-    height: 100%;
-    width: 100%;
-    padding: 10px;
   }
   #bootstrap-overrides h2 {
     margin-top: none;
@@ -95,31 +95,15 @@
     grid-template-columns: 100%;
     grid-template-rows: repeat(auto-fit);
   }
+  .bento {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-flow: row;
+  }
   .card {
     width: fit-content;
   }
   #bootstrap-overrides .headerBox {
     margin-left: 0 !important;
-  }
-  .Infobox {
-    height: fit-content;
-    grid-template-columns: 100%;
-    row-gap: 10px;
-    grid-template-rows: repeat(auto-fit(fit-content));
-    grid-template-areas: "selfie" "text";
-  }
-  .info1 {
-    grid-area: selfie;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .info2 {
-    grid-area: text;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
   }
   .header {
     border: none;
@@ -134,7 +118,7 @@
     max-width: 400px;
     min-width: 370;
   }
-  .skill{
+  .skill {
     margin-top: 0;
   }
 
@@ -187,16 +171,6 @@
   z-index: 3;
 }
 
-
-.Infobox {
-  display: grid;
-}
-
-.selfie {
-  width: 90%;
-  height: 90%;
-}
-
 li {
   font-family: "Archivo";
   font-size: 1.5rem;
@@ -223,14 +197,16 @@ li {
 
 .list {
   display: inline;
-  margin-left: auto;margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 70%;
 }
 
-.right-box{
+.right-box {
   height: fit-content;
   align-self: center;
-  margin-left: auto;margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tag {
@@ -245,14 +221,15 @@ li {
   box-shadow: rgba(0, 0, 0, 0.391) 0px 4px 12px;
 }
 
-.techLogo{
+.techLogo {
   width: 50px;
 }
 
 .tech {
   width: 80px;
   height: 80px;
-  margin-left: 5px;  margin-top: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
   background-color: var(--light);
   font-size: 1.25rem;
   display: inline-block;
@@ -426,4 +403,4 @@ body.DarkToLight .scroller {
   75% {
     top: -12rem;
   }
-}/*# sourceMappingURL=startsida.css.map */
+} /*# sourceMappingURL=startsida.css.map */
