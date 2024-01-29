@@ -45,10 +45,10 @@
   .bento4 {
     background-color: var(--bg);
     background-image:
-        radial-gradient(circle at 10% 20%, #1e1222 10%, transparent 50%),
-        radial-gradient(circle at 90% 90%, var(--light) 2%, transparent 50%),
-        radial-gradient(circle at 60% 60%, var(--orange) 30%, transparent 50%),
-        radial-gradient(circle at 30% 70%, var(--purple) 20%, transparent 50%);
+        radial-gradient(circle at 10% 10%, #1e1222 10%, transparent 50%),
+        radial-gradient(circle at 90% 90%, var(--light) 10%, transparent 50%),
+        radial-gradient(circle at 60% 60%, var(--purple) 10%, transparent 50%),
+        radial-gradient(circle at 30% 70%, var(--purple) 10%, transparent 50%);
     grid-column: span 2;
     max-height: 400px;
     min-height: 200px;
