@@ -94,11 +94,9 @@
   .bento1 {
     grid-column: span 3;
     padding: 20px;
-    width: 98%;
   }
   .bento4 {
     grid-column: span 3;
-    width: 98%;
   }
   .about-me {
     min-height: 400px;
