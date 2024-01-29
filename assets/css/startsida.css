@@ -185,15 +185,14 @@
   justify-self: end;
 }
 .bento4{
-  background-color: var(--bg);
-  background-image: radial-gradient(
-      circle at 10% 10%,
-      #1e1222 10%,
-      transparent 50%
-    ),
-    radial-gradient(circle at 90% 90%, #9f7bb5 10%, transparent 50%),
-    radial-gradient(circle at 60% 60%, #ddd0ef 10%, transparent 50%),
-    radial-gradient(circle at 30% 70%, #50049c 10%, transparent 50%);
+  background-image: linear-gradient(
+    45deg,
+    hsl(0deg 0% 84%) 0%,
+    hsl(8deg 77% 73%) 11%,
+    hsl(320deg 53% 57%) 29%,
+    hsl(277deg 67% 44%) 52%,
+    hsl(0deg 0% 0%) 100%
+  );
 }
 li {
   font-family: "Archivo";
