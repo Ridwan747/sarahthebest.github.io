@@ -54,7 +54,7 @@
     margin-top: none;
   }
   .bento1 {
-    max-height: 350px;
+    max-height: 400px;
     padding: 20px;
   }
   .bento2{
@@ -94,6 +94,7 @@
   .bento1 {
     grid-column: span 3;
     padding: 20px;
+    height: 400px;
   }
   .bento4 {
     grid-column: span 3;
@@ -190,6 +191,7 @@
   width: 100%;
   background-size: cover;
   background-position: bottom;
+
 }
 .bento4{
   background-image: linear-gradient(
