@@ -1,5 +1,5 @@
 /*  beeg screen */
-@media screen and (min-width: 1001px) {
+@media screen and (max-width: 10000px) {
   .header {
     height: 600px;
     position: relative;
