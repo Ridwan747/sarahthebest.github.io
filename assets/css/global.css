@@ -1,6 +1,6 @@
 /*  beeg screen */
 
-@media screen and (max-width: 3000px) {
+@media screen and (min-width: 1001px) {
   *:hover {
     pointer-events: all;
   }
