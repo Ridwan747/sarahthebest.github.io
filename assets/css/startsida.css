@@ -1,5 +1,5 @@
 /*  beeg screen */
-@media screen and (min-width: 1001px) {
+@media screen and (max-width: 10000px) {
   .header {
     height: 100vh;
     position: relative;
@@ -52,7 +52,9 @@
   .bento1 {
     max-height: 350px;
     padding: 20px;
-    grid-column: span 2;
+  }
+  .bento2{
+    max-width: 300px;
   }
   .bento4 {
     grid-column: span 2;
@@ -79,18 +81,20 @@
   .bento {
     grid-template-columns: auto;
     grid-auto-flow: row;
+    padding-top: 20px;padding-bottom: 20px;
   }
   .bento1 {
     grid-column: span 3;
     padding: 20px;
+    width: 98%;
   }
-
   .bento4 {
     grid-column: span 3;
+    width: 98%;
   }
   .about-me {
     min-height: 400px;
-    row-gap: 40px;
+    height: fit-content;
     grid-template-columns: 100%;
     grid-template-rows: repeat(auto-fit);
   }
@@ -171,13 +175,14 @@
 
 .bento2 {
   grid-column: span 1;
-  max-width: 350px;
   float: left;
   max-height: 350px;
+  max-width: 300px;
 }
 .bento3 {
-  max-width: 350px;
   max-height: 300px;
+  max-width: 300px;
+  justify-self: end;
 }
 .bento4{
   background-color: var(--bg);
