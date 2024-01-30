@@ -197,10 +197,8 @@
 }
 .bento4{
   background-image:
-  radial-gradient(at 91% 2%, hsla(262,100%,73%,0.45) 0px, transparent 50%),
-  radial-gradient(at 78% 24%, hsla(268,47%,46%,0.54) 0px, transparent 50%),
-  radial-gradient(at 52% 50%, hsla(281,100%,50%,0.79) 0px, transparent 50%),
-  radial-gradient(at 22% 79%, hsla(275,100%,83%,1) 0px, transparent 50%);
+  radial-gradient(at 84% 24%, hsla(10,100%,62%,1) 0px, transparent 50%),
+  radial-gradient(at 26% 78%, hsla(276,67%,50%,1) 0px, transparent 50%);
 }
   li {
   font-family: "Archivo";
