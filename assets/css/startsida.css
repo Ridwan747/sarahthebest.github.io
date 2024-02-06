@@ -16,7 +16,7 @@
     padding: 20px;
     grid-column: span 2;
   }
-  .bento2{
+  .bento2 {
     grid-column: span 1;
     max-height: 350px;
   }
@@ -55,9 +55,10 @@
   .bento {
     grid-template-columns: auto;
     grid-auto-flow: row;
-    padding-top: 20px;padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
-  .bento2{
+  .bento2 {
     grid-column: span 1;
     max-height: 300px;
   }
@@ -66,7 +67,7 @@
     padding: 20px;
     height: 400px;
   }
-  .bento3{
+  .bento3 {
     grid-column: span 2;
   }
   .bento4 {
@@ -104,13 +105,13 @@
   #bootstrap-overrides .headerBox {
     margin-left: 0 !important;
   }
-  .bento1{
+  .bento1 {
     height: 400px;
   }
-  .bento3{
+  .bento3 {
     grid-column: span 1;
   }
-  .bento2{
+  .bento2 {
     grid-column: span 2;
   }
   .header {
@@ -193,14 +194,16 @@
   width: 100%;
   background-size: cover;
   background-position: bottom;
-
 }
-.bento4{
-  background-image:
-  radial-gradient(at 84% 24%, hsla(10,100%,62%,1) 0px, transparent 50%),
-  radial-gradient(at 26% 78%, hsla(276,67%,50%,1) 0px, transparent 50%);
+.bento4 {
+  background-image: radial-gradient(
+      at 100% 0%,
+      hsla(10, 100%, 62%, 0.58) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 100%, hsla(276, 67%, 50%, 0.64) 0px, transparent 50%);
 }
-  li {
+li {
   font-family: "Archivo";
   font-size: 1.5rem;
   list-style: none;
@@ -432,4 +435,4 @@ body.DarkToLight .scroller {
   75% {
     top: -12rem;
   }
-} 
+}
