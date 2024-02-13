@@ -1,263 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <title>Portfolio</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-      <link rel="stylesheet" href="assets/css/startsida.css" />
-      <link rel="stylesheet" href="assets/css/global.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link
-         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
-         rel="stylesheet">
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <script src="https://kit.fontawesome.com/f471be9456.js" crossorigin="anonymous" defer></script>
-   </head>
 
-   <body class="darkBg" id="bootstrap-overrides">
-      <button id="topBtn" class="position-fixed end-0 bottom-0" onclick="goToTop()">
-      <img class="w-50 ms-3 upArrow" src="assets/img/upArrow.webp" alt="Top button.">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/startsida.css" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/f471be9456.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body class="darkBg" id="bootstrap-overrides">
+  <button id="topBtn" class="position-fixed end-0 bottom-0" onclick="goToTop()">
+    <img class="w-50 ms-3 upArrow" src="assets/img/upArrow.webp" alt="Top button.">
+  </button>
+  <nav class="navbar customBorder border-top-0 border-start-0 border-end-0 navbar-expand-lg sticky-top">
+    <div class="container-lg text-center">
+      <a class="navbar-brand ms-0 ps-0" onclick="return false;" href="index.html"><img class="logo"
+          src="assets/img/logo.webp" alt="logo image."></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
       </button>
-      <nav class="navbar customBorder border-top-0 border-start-0 border-end-0 navbar-expand-lg sticky-top">
-         <div class="container-lg text-center">
-            <a class="navbar-brand ms-0 ps-0" onclick="return false;" href="index.html"><img class="logo"
-               src="assets/img/logo.webp" alt="logo image."></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"> </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mb-lg-0">
-                  <li class="nav-item">
-                     <a class="link" aria-current="page" href="index.html" onclick="return false;">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="link" href="https://github.com/sarahthebest" target="_blank" tabindex="-1">Github</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="link" href="#projects">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="link" href="https://www.linkedin.com/in/sarah-emmoth-696131206/" target="_blank"
-                        tabindex="-1">Linkedin</a>
-                  </li>
-                  <!-- dark mode button -->
-                  <div class="toggle ms-4 my-auto">
-                     <input type="checkbox" class="checkbox" id="checkbox" />
-                     <label for="checkbox" class="checkbox-label rounded-pill d-flex position-relative">
-                        <div class="position-absolute" id="half-circle"></div>
-                        <span class="ball"></span>
-                     </label>
-                     <label for="checkbox" class="toggle-label visually-hidden">Toggle Dark Mode</label>
-                  </div>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <div id="header" class="header mx-auto p-0 m-0">
-         <div class="m-0 p-0 position-fixed overflow-hidden" id="headerBG">
-          <img class="position-absolute h-100" id="mountain" style="filter: blur(1px);"
-          srcset="assets/img/headerBGLaptop.webp 1250w,
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-lg-0">
+          <li class="nav-item">
+            <a class="link" aria-current="page" href="index.html" onclick="return false;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="link" href="https://github.com/sarahthebest" target="_blank" tabindex="-1">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="link" href="https://www.linkedin.com/in/sarah-emmoth-696131206/" target="_blank"
+              tabindex="-1">Linkedin</a>
+          </li>
+          <!-- dark mode button -->
+          <div class="toggle ms-4 my-auto">
+            <input type="checkbox" class="checkbox" id="checkbox" />
+            <label for="checkbox" class="checkbox-label rounded-pill d-flex position-relative">
+              <div class="position-absolute" id="half-circle"></div>
+              <span class="ball"></span>
+            </label>
+            <label for="checkbox" class="toggle-label visually-hidden">Toggle Dark Mode</label>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="header" class="header mx-auto p-0 m-0">
+    <div class="m-0 p-0 position-fixed overflow-hidden" id="headerBG">
+      <img class="position-absolute h-100" id="mountain" style="filter: blur(1px);" srcset="assets/img/headerBGLaptop.webp 1250w,
                   assets/img/headerBGTablet.webp 900w,
                   assets/img/headerBGMobile.webp 300w"
-          sizes="(max-width: 2500px) 1250px, (max-width: 900px) 900px, 300px"
-          src="assets/img/headerBG.webp" alt="Mountain">
-     
-            <div class="circle position-absolute linear">
-            </div>
-         </div>
-         <div class="headerBox container-lg mx-auto p-0">
-            <div class="scroll" style="grid-area: scroll;">
-               <p style="font-size: 1.2rem;">Stockholm, Sweden<span class="spanBorder rounded-pill tag mono"
-                  style="margin-left: 10px;" id="dateTime"></span></p>
-               <div class="wrappertitle col">
-                  <p style="font-size: 2.6rem;">
-                     Sarah Emmoth is a
-                  </p>
-                  <div class="scroller customBorder cursive">
-                     <span>
-                     Web developer.<br/>
-                     UX designer.<br/>
-                     Problemsolver.<br/>
-                     Philosopher.
-                     </span>
-                  </div>
-               </div>
-            </div>
-            <div class="rect d-flex align-items-center justify-content-center customBorder position-relative overflow-hidden">
-               <p class="position-absolute text-center"
-                  style="filter:blur(2px);z-index: 2;font-size: 1rem;line-height: 1.2rem;">Lorem ipsum dolor sit, amet
-                  consectetur adipisicing elit. Atque similique eum delectus aut aperiam dolorum facere, autem inventore sit
-                  dignissimos numquam aliquam quas laudantium voluptates? Expedita deleniti eligendi totam nisi!
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aliquid similique quam veniam rem nam,
-                  ipsam libero! Ducimus, saepe quia. Autem ipsum maiores test laudantium cupiditate eaque quis est voluptates
-                  nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aliquid similique quam veniam rem nam,
-                  ipsam libero! Ducimus, saepe quia. Autem ipsum maiores test laudantium cupiditate eaque quis est voluptates
-                  nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aliquid similique quam veniam rem nam,
-                  ipsam libero! Ducimus, saepe quia. Autem ipsum maiores test laudantium cupiditate eaque quis est voluptates
-                  nam!
-               </p>
-               <div class="cardHole customBorder m-1 p-2 rounded-circle position-absolute top-0 start-0"></div>
-               <img style="width: 300px; z-index: 2;" class="position-absolute top-0" src="assets/img/avatar.webp"
-                  alt="Cartoon of myself.">
-            </div>
-         </div>
+        sizes="(max-width: 2500px) 1250px, (max-width: 900px) 900px, 300px" src="assets/img/headerBG.webp"
+        alt="Mountain">
+
+      <div class="circle position-absolute linear">
       </div>
-      <section class="container-lg mx-auto p-0">
-         <div class="bento m-0 rounded customBG customBorder">
-            <div class="bento1 rounded customBorder text-center align-items-center">
-               <h3 class="mb-4">(｀･ω･´)ﾉ</h3>
-               <p class="text-wrap col-10">
-                  Hello there! I'm <span class="cursive">Sarah</span>, a curious UX developer. Currently
-                  @Jensen YH learning frontend-development and web security.
-                  Passionate about bold fonts, purple and flowers.
-               </p>
-               <p class="text-wrap col-10">
-                  Currently seeking internship positions for fall 2024!
-               </p>
-               <a name="button" class="button hvr-grow-shadow customBorder rounded p-3 mt-2" href="assets/img/CV.pdf"
-                  target="_blank" role="button">My resume</a>
-            </div>
-            <div class="bento2 rounded overflow-hidden">
-               <img class="selfie w-100 h-100" src="assets/img/selfie2.webp"
-                  alt="Image of a woman with shoulder length dark brown hair and glasses giving a thumbs up.">
-            </div>
-            <div class="bento3 rounded overflow-hidden">
-            </div>
-            <div class="bento4 customBorder mx-auto p-4 rounded overflow-hidden">
-               <div style="z-index: 2;" class="float-end text-end d-block position-relative">
-                  <h3 style="font-size: 1.5rem;" class="cursive">Feel free to reach out on my
-                     Linkedin. I'm thrilled to connect with potential collaborators.
-                  </h3>
-                  <a name="button" class="button hvr-grow-shadow customBorder rounded p-3 mt-2"
-                     href="https://www.linkedin.com/in/sarah-emmoth-696131206/" target="_blank" role="button">Connect</a>
-               </div>
-               <img style="width: 150px; z-index:0;" class="img-fluid position-absolute bottom-0 mb-5"
-                  src="assets/img/heart.webp" alt="">
-            </div>
-         </div>
-      </section>
-      <article
-         class="text-center position-relative customBG customBorder rounded container-lg mx-auto p-0 flex-column d-flex">
-         <h3 style="font-family: Archivo;" class="w-100 my-4">
-            My toolbox
-         </h3>
-         <div style="border-left: 0; border-right: 0;" class="about-me customBorder">
-            <div style="min-height: 200px;" class="align-items-center skill position-relative">
-               <img src="assets/img/arch.webp" class="position-absolute textDecoLeft" style="height:150px;"
-                  alt="arch graphic facing left.">
-               <h2 class="mx-auto cursive">UX</h2>
-            </div>
-            <div data-aos="fade-right" data-aos-once="true" class="right-box align-items-center">
-               <ul class="list d-flex flex-wrap p-1 flex-row align-items-center">
-                  <li class="tag spanBorder rounded p-2 customBorder">Figma</li>
-                  <li class="tag spanBorder rounded p-2 customBorder">Adobe Illustrator</li>
-                  <li class="tag spanBorder rounded p-2 customBorder">UX analysis</li>
-                  <li class="tag spanBorder rounded p-2 customBorder">Prototyping</li>
-                  <li class="tag spanBorder rounded p-2 customBorder">User interviews</li>
-                  <li class="tag spanBorder rounded p-2 customBorder">A/B testing</li>
-                  <li class="tag spanBorder rounded p-2 customBorder">Card sorting</li>
-               </ul>
-            </div>
-         </div>
-         <div class="about-me col-12">
-            <div style="min-height: 200px;" class="align-items-center skill position-relative">
-               <img src="assets/img/archRight.webp" class="position-absolute textDeco" style="height:150px;"
-                  alt="arch graphic facing right.">
-               <h2 class="cursive">Frontend</h2>
-            </div>
-            <div data-aos="fade-right" data-aos-once="true" class="right-box align-items-center">
-               <ul class="list d-flex flex-wrap p-0 flex-row align-items-center" style="width: 400px;">
-                  <li class="tech ms-2  rounded d-flex align-items-center customBorder">
-                     <img class="techLogo" src="assets/img/icons/html.webp" alt="HTML logo.">
-                  </li>
-                  <li class="tech ms-2  rounded d-flex align-items-center customBorder">
-                     <img class="techLogo" src="assets/img/icons/css.webp" alt="CSS logo.">
-                  </li>
-                  <li class="tech ms-2  rounded d-flex align-items-center customBorder">
-                     <img class="techLogo" src="assets/img/icons/js.png" alt="Javascript logo.">
-                  </li>
-                  <li class="tech ms-2  rounded d-flex align-items-center customBorder">
-                     <img class="techLogo" src="assets/img/icons/react.webp" alt="React logo.">
-                  </li>
-                  <li class="tech ms-2 rounded d-flex align-items-center customBorder">
-                     <img class="techLogo" src="assets/img/icons/node.webp" alt="Node logo.">
-                  </li>
-                  <li class="tech ms-2  rounded d-flex align-items-center customBorder">
-                     <img class="techLogo" src="assets/img/icons/gh.webp" alt="Github logo.">
-                  </li>
-                  <li class="tech ms-2  rounded d-flex align-items-center customBorder">
-                     <img class="techLogo" src="assets/img/icons/bs.webp" alt="Bootstrap logo.">
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </article>
-      <section class="position-relative mt-5 customBG rounded projects
+    </div>
+    <div class="headerBox container-lg mx-auto p-0">
+      <div class="scroll" style="grid-area: scroll;">
+        <p style="font-size: 1.2rem;">Stockholm, Sweden<span class="spanBorder rounded-pill tag mono"
+            style="margin-left: 10px;" id="dateTime"></span></p>
+        <div class="wrappertitle col">
+          <p style="font-size: 2.6rem;">
+            Sarah Emmoth is a
+          </p>
+          <div class="scroller customBorder cursive">
+            <span>
+              Web developer.<br />
+              UX designer.<br />
+              Problemsolver.<br />
+              Philosopher.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="rect d-flex align-items-center justify-content-center customBorder position-relative overflow-hidden">
+        <p class="position-absolute text-center"
+          style="filter:blur(2px);z-index: 2;font-size: 1rem;line-height: 1.2rem;">Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Atque similique eum delectus aut aperiam dolorum facere, autem inventore sit
+          dignissimos numquam aliquam quas laudantium voluptates? Expedita deleniti eligendi totam nisi!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aliquid similique quam veniam rem nam,
+          ipsam libero! Ducimus, saepe quia. Autem ipsum maiores test laudantium cupiditate eaque quis est voluptates
+          nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aliquid similique quam veniam rem nam,
+          ipsam libero! Ducimus, saepe quia. Autem ipsum maiores test laudantium cupiditate eaque quis est voluptates
+          nam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aliquid similique quam veniam rem nam,
+          ipsam libero! Ducimus, saepe quia. Autem ipsum maiores test laudantium cupiditate eaque quis est voluptates
+          nam!
+        </p>
+        <div class="cardHole customBorder m-1 p-2 rounded-circle position-absolute top-0 start-0"></div>
+        <img style="width: 300px; z-index: 2;" class="position-absolute top-0" src="assets/img/avatar.webp"
+          alt="Cartoon of myself.">
+      </div>
+    </div>
+  </div>
+  <section class="container-lg mx-auto p-0">
+    <div class="bento m-0 rounded customBG customBorder">
+      <div class="bento1 rounded customBorder text-center align-items-center">
+        <h3 class="mb-4">(｀･ω･´)ﾉ</h3>
+        <p class="text-wrap col-10">
+          Hello there! I'm <span class="cursive">Sarah</span>, a curious UX developer. Currently
+          @Jensen YH learning frontend-development and web security.
+          Passionate about bold fonts, purple and flowers.
+        </p>
+        <p class="text-wrap col-10">
+          Currently seeking internship positions for fall 2024!
+        </p>
+        <a name="button" class="button hvr-grow-shadow customBorder rounded p-3 mt-2" href="assets/img/CV.pdf"
+          target="_blank" role="button">My resume</a>
+      </div>
+      <div class="bento2 rounded overflow-hidden">
+        <img class="selfie w-100 h-100" src="assets/img/selfie2.webp"
+          alt="Image of a woman with shoulder length dark brown hair and glasses giving a thumbs up.">
+      </div>
+      <div class="bento3 rounded overflow-hidden">
+      </div>
+      <div class="bento4 customBorder mx-auto p-4 rounded overflow-hidden">
+        <div style="z-index: 2;" class="float-end text-end d-block position-relative">
+          <h3 style="font-size: 1.5rem;" class="cursive">Feel free to reach out on my
+            Linkedin. I'm thrilled to connect with potential collaborators.
+          </h3>
+          <a name="button" class="button hvr-grow-shadow customBorder rounded p-3 mt-2"
+            href="https://www.linkedin.com/in/sarah-emmoth-696131206/" target="_blank" role="button">Connect</a>
+        </div>
+        <img style="width: 150px; z-index:0;" class="img-fluid position-absolute bottom-0 mb-5"
+          src="assets/img/heart.webp" alt="">
+      </div>
+    </div>
+  </section>
+  <article
+    class="text-center position-relative customBG customBorder rounded container-lg mx-auto p-0 flex-column d-flex">
+    <h3 style="font-family: Archivo;" class="w-100 my-4">
+      My toolbox
+    </h3>
+    <div style="border-left: 0; border-right: 0;" class="about-me customBorder">
+      <div style="min-height: 200px;" class="align-items-center skill position-relative">
+        <img src="assets/img/arch.webp" class="position-absolute textDecoLeft" style="height:150px;"
+          alt="arch graphic facing left.">
+        <h2 class="mx-auto cursive">UX</h2>
+      </div>
+      <div data-aos="fade-right" data-aos-once="true" class="right-box align-items-center">
+        <ul class="list d-flex flex-wrap p-1 flex-row align-items-center">
+          <li class="tag spanBorder rounded p-2 customBorder">Figma</li>
+          <li class="tag spanBorder rounded p-2 customBorder">Adobe Illustrator</li>
+          <li class="tag spanBorder rounded p-2 customBorder">UX analysis</li>
+          <li class="tag spanBorder rounded p-2 customBorder">Prototyping</li>
+          <li class="tag spanBorder rounded p-2 customBorder">User interviews</li>
+          <li class="tag spanBorder rounded p-2 customBorder">A/B testing</li>
+          <li class="tag spanBorder rounded p-2 customBorder">Card sorting</li>
+        </ul>
+      </div>
+    </div>
+    <div class="about-me col-12">
+      <div style="min-height: 200px;" class="align-items-center skill position-relative">
+        <img src="assets/img/archRight.webp" class="position-absolute textDeco" style="height:150px;"
+          alt="arch graphic facing right.">
+        <h2 class="cursive">Frontend</h2>
+      </div>
+      <div data-aos="fade-right" data-aos-once="true" class="right-box align-items-center">
+        <ul class="list d-flex flex-wrap p-0 flex-row align-items-center" style="width: 400px;">
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/html.webp" alt="HTML logo.">
+          </li>
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/css.webp" alt="CSS logo.">
+          </li>
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/js.png" alt="Javascript logo.">
+          </li>
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/react.webp" alt="React logo.">
+          </li>
+          <li class="tech ms-2 rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/node.webp" alt="Node logo.">
+          </li>
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/gh.webp" alt="Github logo.">
+          </li>
+          <li class="tech ms-2  rounded d-flex align-items-center customBorder">
+            <img class="techLogo" src="assets/img/icons/bs.webp" alt="Bootstrap logo.">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </article>
+  <section class="position-relative mt-5 customBG rounded projects
          customBorder overflow-hidden container-lg mx-auto p-0 flex-column d-flex">
-         <div class="projects text-center my-5">
-            <h3 class="mb-3">What i've been up to</h3>
-            <img class="arrow img-fluid hvr-float" src="assets/img/Arrow.webp" alt="arrow pointing down." />
-         </div>
-         <div data-aos="fade-right" data-aos-once="true"
-            class="case col-12 m-0 p-0 customBorder border-start-0 border-end-0 ">
-            <div class="align-items-center overflow-hidden" style="height: 350px;">
-               <a href="Velocity.html">
-               <img class="img-fluid" src="assets/img/velocity.webp" alt="Velocity project image." />
-               </a>
-            </div>
-            <div class="flex2 p-0 align-items-center text-center">
-               <div class="proj p-3 d-flex flex-column align-items-center">
-                  <h3 class="cursive">Velocity</h3>
-                  <p>Proof-of-concept for a mobile trading app.</p>
-                  <p class=""><span class="spanBorder rounded-pill p-2 tag">UX-design</span>
-                     <span class="spanBorder rounded-pill p-2 tag">UI-design</span>
-                     <span class="spanBorder rounded-pill p-2 tag">Research</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div data-aos="fade-left" data-aos-once="true" class="case col-12 m-0 p-0 border-0">
-            <div class="align-items-center" style="overflow-y: scroll;height: 350px;">
-               <a href="portfolioCase.html">
-               <img class="img-fluid" src="assets/img/portfolio.webp" alt="Picture of my old portfolio website." />
-               </a>
-            </div>
-            <div class="flex2 p-0 align-items-center text-center">
-               <div class="proj p-3 d-flex flex-column align-items-center">
-                  <h3 class="cursive">Portfolio redesign</h3>
-                  <p>Bringing my old portfolio into the future!</p>
-                  <p class=""><span class="spanBorder rounded-pill p-2 tag">Frontend</span>
-                     <span class="spanBorder rounded-pill p-2 tag">UI-design</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <div style="height: 200px;" data-aos="fadeIn"
-            class="case rounded-bottom col-12 m-0 p-0 customBorder border-start-0 border-end-0 border-bottom-0 position-relative align-items-center">
-            <p>Stay tuned for more...</p>
-         </div>
-      </section>
-      <section class="m-0 mt-5 container-lg mx-auto p-0 flex-column d-flex">
-         <footer class="border-bottom-0 rounded-top customBG customBorder">
-            <div class="mt-2 contact p-4">
-               <p style="font-size: 2.5rem;" class="headline">Want to chat?</p>
-               <a style="font-size: 2rem;" class="cursive chat" href="mailto:sarah.emmoth@gmail.com">Get in touch!
-               </a>
-               <img style="width: 20px;" class="footerArrow mb-3" src="assets/img/arrowRight.webp"
-                  alt="arrow pointing downward left">
-            </div>
-            <div class="w-100 cr">
-               <p class="bottom-0 m-0 p-4 position-absolute "> © 2023 Sarah Emmoth - Crafted with ❤️</p>
-            </div>
-         </footer>
-      </section>
-      
+    <div class="projects text-center my-5">
+      <h3 class="mb-3">What i've been up to</h3>
+      <img class="arrow img-fluid hvr-float" src="assets/img/Arrow.webp" alt="arrow pointing down." />
+    </div>
+    <div data-aos="fade-right" data-aos-once="true"
+      class="case col-12 m-0 p-0 customBorder border-start-0 border-end-0 ">
+      <div class="align-items-center overflow-hidden" style="height: 350px;">
+        <a href="Velocity.html">
+          <img class="img-fluid" src="assets/img/velocity.webp" alt="Velocity project image." />
+        </a>
+      </div>
+      <div class="flex2 p-0 align-items-center text-center">
+        <div class="proj p-3 d-flex flex-column align-items-center">
+          <h3 class="cursive">Velocity</h3>
+          <p>Proof-of-concept for a mobile trading app.</p>
+          <p class=""><span class="spanBorder rounded-pill p-2 tag">UX-design</span>
+            <span class="spanBorder rounded-pill p-2 tag">UI-design</span>
+            <span class="spanBorder rounded-pill p-2 tag">Research</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div data-aos="fade-left" data-aos-once="true" class="case col-12 m-0 p-0 border-0">
+      <div class="align-items-center" style="overflow-y: scroll;height: 350px;">
+        <a href="portfolioCase.html">
+          <img class="img-fluid" src="assets/img/portfolio.webp" alt="Picture of my old portfolio website." />
+        </a>
+      </div>
+      <div class="flex2 p-0 align-items-center text-center">
+        <div class="proj p-3 d-flex flex-column align-items-center">
+          <h3 class="cursive">Portfolio redesign</h3>
+          <p>Bringing my old portfolio into the future!</p>
+          <p class=""><span class="spanBorder rounded-pill p-2 tag">Frontend</span>
+            <span class="spanBorder rounded-pill p-2 tag">UI-design</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div style="height: 200px;" data-aos="fadeIn"
+      class="case rounded-bottom col-12 m-0 p-0 customBorder border-start-0 border-end-0 border-bottom-0 position-relative align-items-center">
+      <p>Stay tuned for more...</p>
+    </div>
+  </section>
+  <section class="m-0 mt-5 container-lg mx-auto p-0 flex-column d-flex">
+    <footer class="border-bottom-0 rounded-top customBG customBorder">
+      <div class="mt-2 contact p-4">
+        <p style="font-size: 2.5rem;" class="headline">Want to chat?</p>
+        <a style="font-size: 2rem;" class="cursive chat" href="mailto:sarah.emmoth@gmail.com">Get in touch!
+        </a>
+        <img style="width: 20px;" class="footerArrow mb-3" src="assets/img/arrowRight.webp"
+          alt="arrow pointing downward left">
+      </div>
+      <div class="w-100 cr">
+        <p class="bottom-0 m-0 p-4 position-absolute "> © 2023 Sarah Emmoth - Crafted with ❤️</p>
+      </div>
+    </footer>
+  </section>
+
   <!-- Bootstrap JS and Popper.js -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -269,8 +269,9 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
- </script>
+  </script>
 
   <script src="scripts.js" defer></script>
-   </body>
+</body>
+
 </html>
