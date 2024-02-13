@@ -139,6 +139,13 @@
 .darkBg {
   background-color: var(--bg);
 }
+.spanBorder {
+  border: 1px solid var(--light);
+  padding: 5px;
+}
+.spanBorder:hover {
+  border: 1px solid var(--orange);
+}
 
 /* class to align items center */
 .align-items-center {
@@ -300,6 +307,9 @@ body.DarkToLight .checkbox-label {
 body.DarkToLight .spanBorder {
   border: 1px solid var(--dark);
 }
+body.DarkToLight .spanBorder:hover {
+  border: 1px solid var(--orange);
+}
 body.DarkToLight .customBorder {
   border: #1717175d 1px solid;
 }
@@ -309,8 +319,7 @@ body.DarkToLight #half-circle {
   transition: 0s !important;
 }
 body.DarkToLight .circle,
-body.DarkToLight .circle2
-body.DarkToLight .circle3 {
+body.DarkToLight .circle2 body.DarkToLight .circle3 {
   background: radial-gradient(
     circle,
     rgba(242, 255, 186, 0.538) 50%,
@@ -388,16 +397,20 @@ body.DarkToLight .navbar-toggler-icon {
 }
 
 /* TEXT STYLES */
+@font-face {
+  font-family: "Rainy Hearts";
+  src: url("../fonts/rainyhearts.woff2") format("woff2");
+}
+
 h2,
 h3,
 h4,
 blockquote,
 li,
-p,
-a {
+p {
   color: var(--light);
   font-family: "Archivo";
-  cursor:default;
+  cursor: default;
 }
 p {
   font-family: "Archivo", sans-serif;
@@ -408,13 +421,10 @@ p {
 }
 .cursive {
   font-family: "Libre Baskerville", serif;
+  font-style: italic;
 }
 .mono {
-  font-family: "Roboto Mono", monospace;
-}
-.spanBorder {
-  border: 1px solid var(--light);
-  padding: 5px;
+  font-family: "Rainy Hearts", sans-serif;
 }
 h1 {
   font-size: 3rem;
