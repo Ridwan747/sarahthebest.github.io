@@ -221,7 +221,6 @@
 nav {
   z-index: 5;
   backdrop-filter: blur(30px);
-  border-bottom: 1px solid #43434353;
 }
 .link {
   text-decoration: none;
@@ -230,6 +229,7 @@ nav {
   color: var(--light);
   display: block;
   padding: 10px;
+  margin-left: 10px;
   width: fit-content;
 }
 .logo {
