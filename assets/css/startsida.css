@@ -417,7 +417,7 @@ body.DarkToLight .scroller {
   position: absolute;
   top: 0;
   animation: slide 5s infinite;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
 }
 
 @keyframes slide {
