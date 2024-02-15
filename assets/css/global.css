@@ -5,7 +5,7 @@
     pointer-events: all;
   }
   p {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     line-height: 32px;
   }
   #mountain {
@@ -399,7 +399,19 @@ body.DarkToLight .navbar-toggler-icon {
 /* TEXT STYLES */
 @font-face {
   font-family: "Rainy Hearts";
-  src: url("../fonts/rainyhearts.woff2") format("woff2");
+  src: url("../fonts/PixelOperator.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo Regular";
+  src: url("../fonts/Archivo-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo Black";
+  src: url("../fonts/ArchivoBlack-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo Semibold";
+  src: url("../fonts/Archivo-SemiBold.woff2") format("woff2");
 }
 
 h2,
@@ -425,6 +437,7 @@ p {
 }
 .mono {
   font-family: "Rainy Hearts", sans-serif;
+  font-size: 1.3rem;
 }
 h1 {
   font-size: 3rem;
