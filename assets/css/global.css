@@ -399,7 +399,7 @@ body.DarkToLight .navbar-toggler-icon {
 /* TEXT STYLES */
 @font-face {
   font-family: "Rainy Hearts";
-  src: url("../fonts/PixelOperator.woff2") format("woff2");
+  src: url("../fonts/rainyhearts.woff2") format("woff2");
 }
 @font-face {
   font-family: "Archivo Regular";
