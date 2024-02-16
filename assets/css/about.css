@@ -1,0 +1,151 @@
+/*  beeg screen */
+@media screen and (max-width: 10000px) {
+  .header {
+    position: relative;
+    overflow: hidden;
+  }
+  .headerBox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-left: 0;
+    margin-top: 3vh;
+  }
+  .bento {
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 300px 300px 200px;
+  }
+  .bento4{
+    grid-column: span 3;
+  }
+  .container-lg {
+    position: relative;
+  }
+  #bootstrap-overrides h4 {
+    margin-top: 0;
+  }
+}
+/* medium */
+@media screen and (max-width: 880px) {
+  .content-to-hide {
+    display: none;
+  }
+  #bg {
+    height: 100%;
+  }
+  .bento2,
+  .bento3{
+    grid-column: span 1;
+  }
+  .bento {
+    max-width: 1000px;
+    width: fit-content;
+    overflow: hidden;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, minmax(1fr, 2fr));
+    grid-auto-columns: auto;
+  }
+  .bento1{
+    grid-column: span 3;
+    width: 620px;
+  }
+  .bento4{
+    grid-column: span 2;
+    width: 620px;
+  }
+}
+/*  small screen */
+@media screen and (max-width: 600px) {
+  #bootstrap-overrides .container-lg {
+    width: 100%;
+  }
+  .header {
+    border: none;
+  }
+}
+.container-lg {
+  flex-wrap: wrap;
+  height: fit-content;
+}
+.bento {
+    grid-column-gap: 20px;
+    width: fit-content;
+    height: fit-content;
+    grid-row-gap: 20px;
+    display: grid;
+    position: relative;
+    padding: 20px;
+    background-image: radial-gradient(
+        at 100% 0%,
+        hsla(276, 69%, 35%, 0.226) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 0% 100%, hsla(10, 77%, 55%, 0.262) 0px, transparent 50%);
+  }
+.hide {
+  opacity: 0;
+}
+.bento1:hover .hide {
+  opacity: 1;
+}
+.bento1:hover h2 {
+  display: none;
+}
+.bento2:hover .hide {
+  opacity: 1;
+}
+.bento2:hover h2 {
+  display: none;
+}
+.bento3:hover .hide {
+  opacity: 1;
+}
+.bento3:hover h2 {
+  display: none;
+}
+
+.bento1 {
+  height: 300px;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.bento2 {
+  max-height: 300px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.bento3 {
+  height: 300px;
+  max-height: 300px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.bento4 {
+  height: 300px;
+}
+
+.bento5 {
+  max-height: 300px;
+  width: 100%;
+  background-image: url(../img/flowerGallery.webp);
+  grid-column: span 1;
+}
+
+.resume{
+  width: 882px;
+  padding: 20px;
+}
+
+section {
+  height: fit-content;
+}
+
+/* Darkmode */
+body.DarkToLight h1,
+body.DarkToLight h2,
+body.DarkToLight p {
+  color: var(--dark);
+}
