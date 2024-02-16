@@ -198,10 +198,10 @@
 .bento4 {
   background-image: radial-gradient(
       at 100% 0%,
-      hsla(276, 69%, 35%, 0.457) 0px,
+    hsla(10, 77%, 55%, 0.491) 0px,
       transparent 50%
     ),
-    radial-gradient(at 0% 100%, hsla(10, 77%, 55%, 0.491) 0px, transparent 50%);
+    radial-gradient(at 0% 100%, hsla(276, 69%, 35%, 0.457) 0px, transparent 50%);
 }
 li {
   font-size: 1.5rem;
@@ -288,7 +288,6 @@ li {
 .button {
   background-color: var(--dark);
   color: var(--light);
-  font-family: "Archivo";
   font-size: 1rem;
   text-decoration: none;
 }
@@ -375,7 +374,7 @@ body.DarkToLight .scroller {
   position: absolute;
   top: 0;
   animation: slide 5s infinite;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
 }
 
 @keyframes slide {

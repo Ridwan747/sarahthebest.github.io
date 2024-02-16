@@ -243,10 +243,6 @@
 #bootstrap-overrides .accordion {
   --bs-accordion-bg: var(--light);
 }
-#bootstrap-overrides .accordion-body {
-  color: var(--dark);
-  font-family: "Archivo";
-}
 .wireframe {
   display: flex;
   flex: row;

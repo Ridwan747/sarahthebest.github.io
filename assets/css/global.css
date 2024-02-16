@@ -1,11 +1,29 @@
-/*  beeg screen */
+/* Import fonts */
 
+@font-face {
+  font-family: "Rainy Hearts";
+  src: url("../fonts/rainyhearts.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo Regular";
+  src: url("../fonts/Archivo-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo Black";
+  src: url("../fonts/ArchivoBlack-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo Semibold";
+  src: url("../fonts/Archivo-SemiBold.woff2") format("woff2");
+}
+
+/*  big screen */
 @media screen and (max-width: 10000px) {
   *:hover {
     pointer-events: all;
   }
   p {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     line-height: 32px;
   }
   #mountain {
@@ -33,7 +51,7 @@
     margin-left: 25vw;
   }
 }
-/* medium */
+/* medium screen*/
 @media screen and (max-width: 1000px) {
   .content-to-hide {
     display: none;
@@ -49,7 +67,7 @@
   }
 }
 
-/*  small screen */
+/* small screen */
 
 @media screen and (max-width: 600px) {
   #bootstrap-overrides .container-lg {
@@ -214,6 +232,9 @@
   position: absolute;
   image-rendering: optimizeSpeed;
 }
+.button{
+  font-family: "Archivo Regular", sans-serif;
+}
 /* navbar */
 .navbar-nav {
   float: right;
@@ -224,7 +245,7 @@ nav {
 }
 .link {
   text-decoration: none;
-  font-family: "Archivo", sans-serif;
+  font-family: "Archivo Regular", sans-serif;
   font-size: 1.2rem;
   color: var(--light);
   display: block;
@@ -397,10 +418,6 @@ body.DarkToLight .navbar-toggler-icon {
 }
 
 /* TEXT STYLES */
-@font-face {
-  font-family: "Rainy Hearts";
-  src: url("../fonts/rainyhearts.woff2") format("woff2");
-}
 
 h2,
 h3,
@@ -409,11 +426,11 @@ blockquote,
 li,
 p {
   color: var(--light);
-  font-family: "Archivo";
+  font-family: "Archivo Regular";
   cursor: default;
 }
 p {
-  font-family: "Archivo", sans-serif;
+  font-family: "Archivo Regular", sans-serif;
   color: var(--light);
 }
 .headline {
@@ -425,11 +442,16 @@ p {
 }
 .mono {
   font-family: "Rainy Hearts", sans-serif;
+  font-size: 1.3rem;
 }
 h1 {
   font-size: 3rem;
   color: var(--light);
   margin-bottom: 20px;
+}
+#bootstrap-overrides .accordion-body {
+  color: var(--dark);
+  font-family: "Archivo";
 }
 
 #bootstrap-overrides h2 {
