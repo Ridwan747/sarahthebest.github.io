@@ -297,6 +297,16 @@ footer {
   box-shadow: 1px 10px 10px rgba(160, 160, 160, 0.26);
 }
 /* darkmode */
+body.DarkToLight h1,
+body.DarkToLight h2,
+body.DarkToLight h3,
+body.DarkToLight h4,
+body.DarkToLight h5,
+body.DarkToLight h6,
+body.DarkToLight p {
+  color: var(--dark);
+}
+
 body.DarkToLight {
   background-color: var(--light);
 }

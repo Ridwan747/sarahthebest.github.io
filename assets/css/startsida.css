@@ -311,21 +311,14 @@ section {
 }
 
 /* Darkmode */
-body.DarkToLight h1,
-body.DarkToLight h2,
-body.DarkToLight h3,
-body.DarkToLight h4,
-body.DarkToLight h5,
-body.DarkToLight h6,
-body.DarkToLight h7,
-body.DarkToLight h8,
-body.DarkToLight p {
-  color: var(--dark);
-}
 
 body.DarkToLight .case {
   border-top: 1px solid var(--dark);
   border-bottom: 1px solid var(--dark);
+}
+
+body.DarkToLight .scroller > span {
+  color: var(--dark);
 }
 
 body.DarkToLight .tag {
@@ -375,6 +368,8 @@ body.DarkToLight .scroller {
   top: 0;
   animation: slide 5s infinite;
   font-size: 2.8rem;
+  color: var(--light);
+  cursor: default;
 }
 
 @keyframes slide {
