@@ -1,4 +1,4 @@
-<h1>Welcome to my <a href="https://emmoth.me/">portfolio</a></h1>
+<h1>Welcome to my <a href="https://emmoth.me/" target="_blank">portfolio</a></h1>
 <p>This portfolio is a redesign of a old portfolio from 2021 and built with html, css, bootstrap and javascript.</p>
 
 
@@ -7,7 +7,7 @@
 
 <p>Portfolio projects</p>
 <ul>
-  <li><a href="https://emmoth.me/Velocity.html">Velocity</a></li>
+  <li><a href="https://emmoth.me/Velocity.html" target="_blank">Velocity</a></li>
   <ul>
     <li>
     A project i did during a internship at Lines Designworks.
@@ -17,7 +17,7 @@
     </li>
   </ul>
     
-  <li><a href="https://emmoth.me/portfolioCase.html">Portfolio redesign</a></li>
+  <li><a href="https://emmoth.me/portfolioCase.html" target="_blank">Portfolio redesign</a></li>
   <ul>
     <li>
     Detailing the process of redesigning my old portfolio.
