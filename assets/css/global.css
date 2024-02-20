@@ -164,7 +164,12 @@
 .spanBorder:hover {
   border: 1px solid var(--orange);
 }
-
+.linkUnstyled{
+  text-decoration: none;
+}
+.shadow {
+  box-shadow: 1px 10px 10px rgba(160, 160, 160, 0.26);
+}
 /* class to align items center */
 .align-items-center {
   display: flex;
@@ -295,9 +300,7 @@ footer {
   color: var(--light);
   text-decoration: underline 1px var(--light);
 }
-.shadow {
-  box-shadow: 1px 10px 10px rgba(160, 160, 160, 0.26);
-}
+
 /* darkmode */
 body.DarkToLight h1,
 body.DarkToLight h2,
