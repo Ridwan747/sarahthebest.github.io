@@ -228,16 +228,12 @@ li {
 
 .list {
   display: inline;
-  margin-left: auto;
-  margin-right: auto;
   width: 70%;
 }
 
 .right-box {
   height: fit-content;
   align-self: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .tag {
