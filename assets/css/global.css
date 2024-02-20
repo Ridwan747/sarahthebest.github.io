@@ -283,11 +283,13 @@ footer {
   width: fit-content;
 }
 .footerArrow {
+  width: 20px;
   filter: invert(1);
 }
 .chat {
   color: var(--light);
   text-decoration: none;
+  font-size: 2rem;
 }
 .chat:hover {
   color: var(--light);
